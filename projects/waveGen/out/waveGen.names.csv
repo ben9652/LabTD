@@ -1,0 +1,228 @@
+projects/waveGen/out/waveGen.elf:1a000678 00000044 t Board_LED_Init
+projects/waveGen/out/waveGen.elf:1a0006bc 00000040 t Board_TEC_Init
+projects/waveGen/out/waveGen.elf:1a0006fc 00000040 t Board_GPIO_Init
+projects/waveGen/out/waveGen.elf:1a00073c 00000030 t Board_ADC_Init
+projects/waveGen/out/waveGen.elf:1a00076c 00000038 t Board_SPI_Init
+projects/waveGen/out/waveGen.elf:1a0007a4 00000024 t Board_I2C_Init
+projects/waveGen/out/waveGen.elf:1a0034c4 00000008 t GpioButtons
+projects/waveGen/out/waveGen.elf:1a0034cc 0000000c t GpioLeds
+projects/waveGen/out/waveGen.elf:1a0034d8 00000012 t GpioPorts
+projects/waveGen/out/waveGen.elf:1a0034f0 00000004 t InitClkStates
+projects/waveGen/out/waveGen.elf:1a0034f4 00000074 t pinmuxing
+projects/waveGen/out/waveGen.elf:1a000914 0000002c t Chip_UART_GetIndex
+projects/waveGen/out/waveGen.elf:1a003568 00000008 t UART_BClock
+projects/waveGen/out/waveGen.elf:1a003570 00000008 t UART_PClock
+projects/waveGen/out/waveGen.elf:1a000a7c 00000014 t Chip_ADC_GetClockIndex
+projects/waveGen/out/waveGen.elf:1a000a90 00000032 t getClkDiv
+projects/waveGen/out/waveGen.elf:1a000b44 000000a0 t pll_calc_divs
+projects/waveGen/out/waveGen.elf:1a000be4 0000010c t pll_get_frac
+projects/waveGen/out/waveGen.elf:1a000cf0 0000004c t Chip_Clock_FindBaseClock
+projects/waveGen/out/waveGen.elf:1a000f64 00000022 t Chip_Clock_GetDivRate
+projects/waveGen/out/waveGen.elf:1000003c 00000008 b audio_usb_pll_freq
+projects/waveGen/out/waveGen.elf:1a003584 0000006c t periph_to_base
+projects/waveGen/out/waveGen.elf:1a0035f0 00000048 t InitClkStates
+projects/waveGen/out/waveGen.elf:1a001228 00000014 t Chip_SSP_GetClockIndex
+projects/waveGen/out/waveGen.elf:1a00123c 00000018 t Chip_SSP_GetPeriphClockIndex
+projects/waveGen/out/waveGen.elf:10000000 00000038 d i2c
+projects/waveGen/out/waveGen.elf:1a003638 00000080 t npio2_hw
+projects/waveGen/out/waveGen.elf:1a0036b8 00000108 t two_over_pi
+projects/waveGen/out/waveGen.elf:1a0037c0 00000010 t init_jk
+projects/waveGen/out/waveGen.elf:1a0037d0 00000040 t PIo2
+projects/waveGen/out/waveGen.elf:1a003814 t __init_array_end
+projects/waveGen/out/waveGen.elf:1a003810 b __preinit_array_end
+projects/waveGen/out/waveGen.elf:1a003810 t __init_array_start
+projects/waveGen/out/waveGen.elf:1a003810 b __preinit_array_start
+projects/waveGen/out/waveGen.elf:1a000d88 0000001c T Chip_Clock_GetDividerSource
+projects/waveGen/out/waveGen.elf:1a002ff8 00000012 T __aeabi_dcmple
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W TIMER2_IRQHandler
+projects/waveGen/out/waveGen.elf:1a002f34 0000007a T __cmpdf2
+projects/waveGen/out/waveGen.elf:1a002534 0000000e T fabs
+projects/waveGen/out/waveGen.elf:1a000184 00000002 W DebugMon_Handler
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W RIT_IRQHandler
+projects/waveGen/out/waveGen.elf:1a080000 A __top_MFlashA512
+projects/waveGen/out/waveGen.elf:1a002f34 0000007a T __eqdf2
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W ADCHS_IRQHandler
+projects/waveGen/out/waveGen.elf:1a000114 T __section_table_start
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W FLASH_EEPROM_IRQHandler
+projects/waveGen/out/waveGen.elf:1a000300 00000054 T ConfigurarDAC
+projects/waveGen/out/waveGen.elf:1a002aa4 0000005a T __floatdidf
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W I2C0_IRQHandler
+projects/waveGen/out/waveGen.elf:1a000818 00000008 T __stdio_init
+projects/waveGen/out/waveGen.elf:1a00017a 00000002 W HardFault_Handler
+projects/waveGen/out/waveGen.elf:1a000000 A __vectors_start__
+projects/waveGen/out/waveGen.elf:1a000b36 0000000c T Chip_ADC_SetResolution
+projects/waveGen/out/waveGen.elf:1a000188 00000002 W SysTick_Handler
+projects/waveGen/out/waveGen.elf:10000038 00000002 B x
+projects/waveGen/out/waveGen.elf:1a0004f8 00000002 W initialise_monitor_handles
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W SDIO_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W ATIMER_IRQHandler
+projects/waveGen/out/waveGen.elf:1a000186 00000002 W PendSV_Handler
+projects/waveGen/out/waveGen.elf:1a000178 00000002 W NMI_Handler
+projects/waveGen/out/waveGen.elf:1a00381c R __exidx_end
+projects/waveGen/out/waveGen.elf:1a000150 T __data_section_table_end
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W I2C1_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W UART1_IRQHandler
+projects/waveGen/out/waveGen.elf:1a002f24 0000008a T __gtdf2
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W GPIO5_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W CAN1_IRQHandler
+projects/waveGen/out/waveGen.elf:53ff7392 A __valid_user_code_checksum
+projects/waveGen/out/waveGen.elf:1a002548 00000120 T floor
+projects/waveGen/out/waveGen.elf:1a00381c R _etext
+projects/waveGen/out/waveGen.elf:1a002fc0 00000010 T __aeabi_cdcmple
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W USB1_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W I2S0_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W TIMER3_IRQHandler
+projects/waveGen/out/waveGen.elf:1a001006 0000000c T Chip_Clock_GetBaseClocktHz
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W UART0_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0001a8 00000012 T bss_init
+projects/waveGen/out/waveGen.elf:1a001458 0000044c T __ieee754_rem_pio2
+projects/waveGen/out/waveGen.elf:1a002fb0 00000020 T __aeabi_cdrcmple
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W SGPIO_IRQHandler
+projects/waveGen/out/waveGen.elf:1a002a34 00000022 T __floatsidf
+projects/waveGen/out/waveGen.elf:1a002f2c 00000082 T __ltdf2
+projects/waveGen/out/waveGen.elf:1a0030c4 T __aeabi_uldivmod
+projects/waveGen/out/waveGen.elf:10000044 ? _noinit
+projects/waveGen/out/waveGen.elf:1a000940 00000054 T Chip_UART_Init
+projects/waveGen/out/waveGen.elf:1a0008d0 00000010 T Chip_DAC_UpdateValue
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W ADC0_IRQHandler
+projects/waveGen/out/waveGen.elf:1a000180 00000002 W UsageFault_Handler
+projects/waveGen/out/waveGen.elf:1a0018a8 00000284 T __kernel_cos
+projects/waveGen/out/waveGen.elf:1a001084 0000004c T Chip_Clock_GetRate
+projects/waveGen/out/waveGen.elf:1a003084 00000040 T __fixunsdfsi
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W GPIO6_IRQHandler
+projects/waveGen/out/waveGen.elf:1a000858 0000006c T Board_SetupClocking
+projects/waveGen/out/waveGen.elf:20008000 A __top_RamAHB32
+projects/waveGen/out/waveGen.elf:1a002a14 0000001e T __aeabi_ui2d
+projects/waveGen/out/waveGen.elf:1a0030f4 000002dc T __udivmoddi4
+projects/waveGen/out/waveGen.elf:1a002790 T __aeabi_drsub
+projects/waveGen/out/waveGen.elf:1a0034c0 00000004 T ExtRateIn
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W IntDefaultHandler
+projects/waveGen/out/waveGen.elf:1a000300 T __CRP_WORD_END__
+projects/waveGen/out/waveGen.elf:1a000600 00000078 T Led_Off
+projects/waveGen/out/waveGen.elf:1a002fe4 00000012 T __aeabi_dcmplt
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W GPIO1_IRQHandler
+projects/waveGen/out/waveGen.elf:1a000354 00000094 T ConfigurarPuertosLaboratorio
+projects/waveGen/out/waveGen.elf:1a0023a0 00000194 T __kernel_sin
+projects/waveGen/out/waveGen.elf:1a002a58 0000003a T __extendsfdf2
+projects/waveGen/out/waveGen.elf:1a002d54 000001d0 T __aeabi_ddiv
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W SSP0_IRQHandler
+projects/waveGen/out/waveGen.elf:1a00279c 00000276 T __adddf3
+projects/waveGen/out/waveGen.elf:1a003814 R __exidx_start
+projects/waveGen/out/waveGen.elf:1a002b00 00000254 T __aeabi_dmul
+projects/waveGen/out/waveGen.elf:1a0002fc 00000004 T CRP_WORD
+projects/waveGen/out/waveGen.elf:1a0033d4 00000050 T __libc_init_array
+projects/waveGen/out/waveGen.elf:1a002a14 0000001e T __floatunsidf
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W ADC1_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0007ec 0000002c T Board_Init
+projects/waveGen/out/waveGen.elf:1a000586 00000002 W _init
+projects/waveGen/out/waveGen.elf:1a000588 00000078 T Led_On
+projects/waveGen/out/waveGen.elf:1a000114 T __data_section_table
+projects/waveGen/out/waveGen.elf:1a001b30 00000870 T __kernel_rem_pio2
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W RTC_IRQHandler
+projects/waveGen/out/waveGen.elf:10000044 B _ebss
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W TIMER0_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0004fc 00000088 T Reset_Handler
+projects/waveGen/out/waveGen.elf:20010000 A __top_RamAHB_ETB16
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W SPI_IRQHandler
+projects/waveGen/out/waveGen.elf:1a001320 00000038 T Chip_I2C_SetClockRate
+projects/waveGen/out/waveGen.elf:1a003034 0000004e T __fixdfsi
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W LCD_IRQHandler
+projects/waveGen/out/waveGen.elf:1a000d3c 0000004c T Chip_Clock_EnableCrystal
+projects/waveGen/out/waveGen.elf:10008000 A __top_RamLoc32
+projects/waveGen/out/waveGen.elf:1a00279c 00000276 T __aeabi_dadd
+projects/waveGen/out/waveGen.elf:1a00018a 0000001e T data_init
+projects/waveGen/out/waveGen.elf:1a002f2c 00000082 T __ledf2
+projects/waveGen/out/waveGen.elf:1a002a94 0000006a T __aeabi_ul2d
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W TIMER1_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0012fc 00000024 T Chip_I2C_Init
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W UART2_IRQHandler
+projects/waveGen/out/waveGen.elf:1a000ef8 0000006c T Chip_Clock_GetMainPLLHz
+projects/waveGen/out/waveGen.elf:1a001254 00000012 T Chip_SSP_SetClockRate
+projects/waveGen/out/waveGen.elf:1a003020 00000012 T __aeabi_dcmpgt
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W GPIO2_IRQHandler
+projects/waveGen/out/waveGen.elf:1a000fe0 00000026 T Chip_Clock_GetBaseClock
+projects/waveGen/out/waveGen.elf:1a00300c 00000012 T __aeabi_dcmpge
+projects/waveGen/out/waveGen.elf:10000038 B _bss
+projects/waveGen/out/waveGen.elf:1a0008f8 0000001a T Chip_DAC_Init
+projects/waveGen/out/waveGen.elf:1a000b04 00000032 T Chip_ADC_SetSampleRate
+projects/waveGen/out/waveGen.elf:1a002798 0000027a T __aeabi_dsub
+projects/waveGen/out/waveGen.elf:1a001398 000000c0 T sin
+projects/waveGen/out/waveGen.elf:1a002a94 0000006a T __floatundidf
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W I2S1_IRQHandler
+projects/waveGen/out/waveGen.elf:1a001266 0000003e T Chip_SSP_SetBitRate
+projects/waveGen/out/waveGen.elf:1a001224 00000002 T Chip_GPIO_Init
+projects/waveGen/out/waveGen.elf:1a0034ec 00000004 T OscRateIn
+projects/waveGen/out/waveGen.elf:10000044 ? _end_noinit
+projects/waveGen/out/waveGen.elf:10008000 A _vStackTop
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W SSP1_IRQHandler
+projects/waveGen/out/waveGen.elf:1a000178 T __bss_section_table_end
+projects/waveGen/out/waveGen.elf:1a002a34 00000022 T __aeabi_i2d
+projects/waveGen/out/waveGen.elf:1a0033d0 00000002 W __aeabi_ldiv0
+projects/waveGen/out/waveGen.elf:1a002d54 000001d0 T __divdf3
+projects/waveGen/out/waveGen.elf:1a002b00 00000254 T __muldf3
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W USB0_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W GPIO3_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W SCT_IRQHandler
+projects/waveGen/out/waveGen.elf:1a000da4 0000001c T Chip_Clock_GetDividerDivisor
+projects/waveGen/out/waveGen.elf:1a0002fc T __CRP_WORD_START__
+projects/waveGen/out/waveGen.elf:1a003424 0000009a T memset
+projects/waveGen/out/waveGen.elf:1a00017c 00000002 W MemManage_Handler
+projects/waveGen/out/waveGen.elf:1a0004e4 00000014 T main
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W WDT_IRQHandler
+projects/waveGen/out/waveGen.elf:2000c000 A __top_RamAHB16
+projects/waveGen/out/waveGen.elf:1008a000 A __top_RamLoc40
+projects/waveGen/out/waveGen.elf:1a000182 00000002 W SVC_Handler
+projects/waveGen/out/waveGen.elf:1a002aa4 0000005a T __aeabi_l2d
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W GPIO7_IRQHandler
+projects/waveGen/out/waveGen.elf:1a001014 0000003c T Chip_Clock_EnableOpts
+projects/waveGen/out/waveGen.elf:1a000dc0 000000b8 T Chip_Clock_GetClockInputHz
+projects/waveGen/out/waveGen.elf:1a000e78 00000080 T Chip_Clock_CalcMainPLLValue
+projects/waveGen/out/waveGen.elf:1a001358 00000040 T SystemInit
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W SPIFI_IRQHandler
+projects/waveGen/out/waveGen.elf:1a002774 0000001a T copysign
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W QEI_IRQHandler
+projects/waveGen/out/waveGen.elf:1a000150 T __bss_section_table
+projects/waveGen/out/waveGen.elf:1a002f34 0000007a T __nedf2
+projects/waveGen/out/waveGen.elf:1a000584 00000002 W _fini
+projects/waveGen/out/waveGen.elf:1a000ac4 00000040 T Chip_ADC_Init
+projects/waveGen/out/waveGen.elf:1a000820 00000038 T Board_SetupMuxing
+projects/waveGen/out/waveGen.elf:1a000994 000000e8 T Chip_UART_SetBaudFDR
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W ETH_IRQHandler
+projects/waveGen/out/waveGen.elf:1a002668 0000010c T scalbn
+projects/waveGen/out/waveGen.elf:10000000 ? _end_uninit_RESERVED
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W CAN0_IRQHandler
+projects/waveGen/out/waveGen.elf:10000000 D _data
+projects/waveGen/out/waveGen.elf:10000044 B _pvHeapStart
+projects/waveGen/out/waveGen.elf:1a000178 T __section_table_end
+projects/waveGen/out/waveGen.elf:1a0012a4 00000038 T Chip_SSP_Init
+projects/waveGen/out/waveGen.elf:1a003084 00000040 T __aeabi_d2uiz
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W GINT0_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0008e0 00000018 T Chip_DAC_SetBias
+projects/waveGen/out/waveGen.elf:1a0003e8 000000fc T DAC_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0007c8 00000024 T Board_Debug_Init
+projects/waveGen/out/waveGen.elf:1a002fd0 00000012 T __aeabi_dcmpeq
+projects/waveGen/out/waveGen.elf:10000038 D _edata
+projects/waveGen/out/waveGen.elf:1a0012dc 00000020 T Chip_I2C_EventHandler
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W M0SUB_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0010d0 00000154 T Chip_SetupCoreClock
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W GPIO0_IRQHandler
+projects/waveGen/out/waveGen.elf:1a000000 00000040 T g_pfnVectors
+projects/waveGen/out/waveGen.elf:1a003034 0000004e T __aeabi_d2iz
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W DMA_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W EVRT_IRQHandler
+projects/waveGen/out/waveGen.elf:1b080000 A __top_MFlashB512
+projects/waveGen/out/waveGen.elf:1a0033d0 00000002 W __aeabi_idiv0
+projects/waveGen/out/waveGen.elf:1a00017e 00000002 W BusFault_Handler
+projects/waveGen/out/waveGen.elf:1a001050 00000034 T Chip_Clock_Enable
+projects/waveGen/out/waveGen.elf:1a002fc0 00000010 T __aeabi_cdcmpeq
+projects/waveGen/out/waveGen.elf:1a002f24 0000008a T __gedf2
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W UART3_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W MCPWM_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W M0APP_IRQHandler
+projects/waveGen/out/waveGen.elf:1a002a58 0000003a T __aeabi_f2d
+projects/waveGen/out/waveGen.elf:1a000040 000000d4 T g_pfnVendorVectors
+projects/waveGen/out/waveGen.elf:1a002798 0000027a T __subdf3
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W GINT1_IRQHandler
+projects/waveGen/out/waveGen.elf:1a000f88 00000058 T Chip_Clock_SetBaseClock
+projects/waveGen/out/waveGen.elf:1a0001ba 00000002 W GPIO4_IRQHandler
+projects/waveGen/out/waveGen.elf:1a0008c4 0000000c T Board_SystemInit
