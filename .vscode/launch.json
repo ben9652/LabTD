@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [        
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceRoot}",
+            "executable": "./projects/lab2_AT/out/lab2_AT.elf",
+            "name": "Debug (OpenOCD)",
+            "configFiles": [
+                "${workspaceRoot}/scripts/openocd/lpc4337.cfg"
+            ],
+            // "svdFile": "${workspaceFolder}/scripts/openocd/LPC43xx_43Sxx.svd",
+        }
+    ],
+    "compounds": []
+}
