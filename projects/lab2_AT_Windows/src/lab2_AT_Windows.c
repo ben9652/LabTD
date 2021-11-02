@@ -166,12 +166,14 @@ void UART2_IRQHandler(void)
 
         if(modoAT)
         {
-            *(buffer + 10) = '*'; *(buffer + 17) = 'c'; *(buffer + 24) = ' ';
-            *(buffer + 11) = ' '; *(buffer + 18) = 'o'; *(buffer + 25) = '*';
-            *(buffer + 12) = 'M'; *(buffer + 19) = 'n'; *(buffer + 26) = '\r';
-            *(buffer + 13) = 'o'; *(buffer + 20) = 's'; *(buffer + 27) = '\n';
-            *(buffer + 14) = 'd'; *(buffer + 21) = 'o'; *(buffer + 28) = 0;
-            *(buffer + 16) = ' '; *(buffer + 23) = 'a';
+            *(buffer + 10) = '*'; *(buffer + 16) = ' '; *(buffer + 22) = 'l';
+            *(buffer + 11) = ' '; *(buffer + 17) = 'c'; *(buffer + 23) = 'a';
+            *(buffer + 12) = 'M'; *(buffer + 18) = 'o'; *(buffer + 24) = ' ';
+            *(buffer + 13) = 'o'; *(buffer + 19) = 'n'; *(buffer + 25) = '*';
+            *(buffer + 14) = 'd'; *(buffer + 20) = 's'; *(buffer + 26) = '\r';
+            *(buffer + 15) = 'o'; *(buffer + 21) = 'o'; *(buffer + 27) = '\n';
+
+                                                        *(buffer + 28) = 0;
         }
     }
     else if(modoAT)
