@@ -165,7 +165,14 @@ void UART2_IRQHandler(void)
         *(buffer + 10) = 0;
 
         if(modoAT)
-            strcat(buffer, "* Modo consola *\r\n");
+        {
+            *(buffer + 10) = '*'; *(buffer + 17) = 'c'; *(buffer + 24) = ' ';
+            *(buffer + 11) = ' '; *(buffer + 18) = 'o'; *(buffer + 25) = '*';
+            *(buffer + 12) = 'M'; *(buffer + 19) = 'n'; *(buffer + 26) = '\r';
+            *(buffer + 13) = 'o'; *(buffer + 20) = 's'; *(buffer + 27) = '\n';
+            *(buffer + 14) = 'd'; *(buffer + 21) = 'o'; *(buffer + 28) = 0;
+            *(buffer + 16) = ' '; *(buffer + 23) = 'a';
+        }
     }
     else if(modoAT)
     {
@@ -365,6 +372,8 @@ int main(void)
     *comandoAT = 0;
     
     aux = buffer;
+
+    USB_UART->TER2 = 0;
     
     uint8_t readData = 0;
     uint8_t readError = 0;
@@ -387,6 +396,8 @@ int main(void)
         uint8_t entersLoop = 0;
         while(arrayLength(buffer))
         {
+            if(!entersLoop)
+                USB_UART->TER2 = 1;
             entersLoop = 1;
             if(UARTDisponible(USB_UART))
             {
@@ -395,8 +406,10 @@ int main(void)
                 USB_UART->THR = caracter;
             }
         }
+        
         if(entersLoop)
         {
+            USB_UART->TER2 = 0;
             entersLoop = 0;
             buffer = aux;
             memset(buffer, 0, 100);
