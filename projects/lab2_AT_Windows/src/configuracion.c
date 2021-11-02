@@ -58,8 +58,10 @@ void ConfigurarInterrupciones(void) {
    
 
    NVIC->ICPR[0] |= 1 << USART3_IRQn;
-
    NVIC->ISER[0] |= 1 << USART3_IRQn;
+
+   NVIC->ICPR[0] |= 1 << USART2_IRQn;
+   NVIC->ISER[0] |= 1 << USART2_IRQn;
 
    /****** Fin de configuración de interrupciones por GPIO *****/
 
