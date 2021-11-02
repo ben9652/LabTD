@@ -145,17 +145,6 @@ void UART2_IRQHandler(void)
 {
     uint8_t dato = USB_UART->RBR & UART_RBR_MASKBIT;
 
-    // Esta variable adquirirá el valor 2 cuando se detecte el caracter 27
-    // en la USART2. Esta variable al final servirá para captar que se
-    // apretó la tecla F2, que servirá para pasar al modo AT.
-    uint8_t esF2 = 0;
-
-    uint8_t esFn = 0;
-
-    uint8_t* comandoAT = (uint8_t*)malloc(50);
-    *comandoAT = 0;
-    uint8_t index_AT = 0;
-
     if(dato == 0x00)
         esFn = 1;
     if(esFn && dato == 0x3C)
@@ -188,6 +177,8 @@ void UART2_IRQHandler(void)
         }
         else
         {
+            uint8_t index_AT = 0;
+
             index_buff = 1;
 
             *buffer = dato;
@@ -369,6 +360,10 @@ int main(void)
 {
     buffer = (uint8_t*)malloc(100);
     *buffer = 0;
+
+    comandoAT = (uint8_t*)malloc(50);
+    *comandoAT = 0;
+    
     aux = buffer;
     
     uint8_t readData = 0;

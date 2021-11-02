@@ -60,12 +60,15 @@ extern "C" {
 
 /* == Declaraciones de tipos de datos ========================================================== */
 static uint8_t modoAT = 0;
+static uint8_t* comandoAT;
 static uint8_t* buffer;    // Para almacenar caracteres
 static uint8_t* aux;
 static uint8_t index_buff;
 static uint8_t textoEnviado = 0;
 static uint8_t esConsulta = 0;
 static uint8_t contador;
+static uint8_t esF2 = 0;
+static uint8_t esFn = 0;
 
 /* === Declaraciones de variables externas ===================================================== */
 
