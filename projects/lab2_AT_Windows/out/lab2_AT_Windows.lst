@@ -68,15 +68,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  24 .debug_macro  00009682  00000000  00000000  00042928  2**0
                   CONTENTS, READONLY, DEBUGGING
- 25 .debug_line   00008c03  00000000  00000000  0004bfaa  2**0
+ 25 .debug_line   00008c0f  00000000  00000000  0004bfaa  2**0
                   CONTENTS, READONLY, DEBUGGING
- 26 .debug_str    0001f0cd  00000000  00000000  00054bad  2**0
+ 26 .debug_str    0001f0cd  00000000  00000000  00054bb9  2**0
                   CONTENTS, READONLY, DEBUGGING
- 27 .comment      00000031  00000000  00000000  00073c7a  2**0
+ 27 .comment      00000031  00000000  00000000  00073c86  2**0
                   CONTENTS, READONLY
- 28 .ARM.attributes 00000037  00000000  00000000  00073cab  2**0
+ 28 .ARM.attributes 00000037  00000000  00000000  00073cb7  2**0
                   CONTENTS, READONLY
- 29 .debug_frame  00001588  00000000  00000000  00073ce4  2**2
+ 29 .debug_frame  00001588  00000000  00000000  00073cf0  2**2
                   CONTENTS, READONLY, DEBUGGING
 SYMBOL TABLE:
 1a000000 l    d  .text	00000000 .text
@@ -1555,9 +1555,9 @@ void UART2_IRQHandler(void)
 1a00087e:	b10c      	cbz	r4, 1a000884 <UART2_IRQHandler+0x1c>
 1a000880:	2b3c      	cmp	r3, #60	; 0x3c
 1a000882:	d018      	beq.n	1a0008b6 <UART2_IRQHandler+0x4e>
-            *(buffer + 15) = 'o'; *(buffer + 21) = 'o'; *(buffer + 27) = '\n';
-
-                                                        *(buffer + 28) = 0;
+            *(buffer + 26) = '\r';
+            *(buffer + 27) = '\n';
+            *(buffer + 28) = 0;
         }
     }
     else if(modoAT)
@@ -1655,43 +1655,55 @@ void UART2_IRQHandler(void)
         if(modoAT)
 1a0008ee:	2a00      	cmp	r2, #0
 1a0008f0:	d0e0      	beq.n	1a0008b4 <UART2_IRQHandler+0x4c>
-            *(buffer + 10) = '*'; *(buffer + 16) = ' '; *(buffer + 22) = 'l';
+            *(buffer + 10) = '*';
 1a0008f2:	202a      	movs	r0, #42	; 0x2a
 1a0008f4:	7298      	strb	r0, [r3, #10]
+            *(buffer + 11) = ' ';
 1a0008f6:	2120      	movs	r1, #32
-1a0008f8:	7419      	strb	r1, [r3, #16]
-1a0008fa:	226c      	movs	r2, #108	; 0x6c
-1a0008fc:	759a      	strb	r2, [r3, #22]
-            *(buffer + 11) = ' '; *(buffer + 17) = 'c'; *(buffer + 23) = 'a';
-1a0008fe:	72d9      	strb	r1, [r3, #11]
-1a000900:	2263      	movs	r2, #99	; 0x63
-1a000902:	745a      	strb	r2, [r3, #17]
-1a000904:	2261      	movs	r2, #97	; 0x61
-1a000906:	75da      	strb	r2, [r3, #23]
-            *(buffer + 12) = 'M'; *(buffer + 18) = 'o'; *(buffer + 24) = ' ';
-1a000908:	224d      	movs	r2, #77	; 0x4d
-1a00090a:	731a      	strb	r2, [r3, #12]
-1a00090c:	226f      	movs	r2, #111	; 0x6f
+1a0008f8:	72d9      	strb	r1, [r3, #11]
+            *(buffer + 12) = 'M';
+1a0008fa:	224d      	movs	r2, #77	; 0x4d
+1a0008fc:	731a      	strb	r2, [r3, #12]
+            *(buffer + 13) = 'o';
+1a0008fe:	226f      	movs	r2, #111	; 0x6f
+1a000900:	735a      	strb	r2, [r3, #13]
+            *(buffer + 14) = 'd'; 
+1a000902:	2464      	movs	r4, #100	; 0x64
+1a000904:	739c      	strb	r4, [r3, #14]
+            *(buffer + 15) = 'o';
+1a000906:	73da      	strb	r2, [r3, #15]
+            *(buffer + 16) = ' ';
+1a000908:	7419      	strb	r1, [r3, #16]
+            *(buffer + 17) = 'c';
+1a00090a:	2463      	movs	r4, #99	; 0x63
+1a00090c:	745c      	strb	r4, [r3, #17]
+            *(buffer + 18) = 'o';
 1a00090e:	749a      	strb	r2, [r3, #18]
-1a000910:	7619      	strb	r1, [r3, #24]
-            *(buffer + 13) = 'o'; *(buffer + 19) = 'n'; *(buffer + 25) = '*';
-1a000912:	735a      	strb	r2, [r3, #13]
-1a000914:	216e      	movs	r1, #110	; 0x6e
-1a000916:	74d9      	strb	r1, [r3, #19]
-1a000918:	7658      	strb	r0, [r3, #25]
-            *(buffer + 14) = 'd'; *(buffer + 20) = 's'; *(buffer + 26) = '\r';
-1a00091a:	2164      	movs	r1, #100	; 0x64
-1a00091c:	7399      	strb	r1, [r3, #14]
-1a00091e:	2173      	movs	r1, #115	; 0x73
-1a000920:	7519      	strb	r1, [r3, #20]
-1a000922:	210d      	movs	r1, #13
-1a000924:	7699      	strb	r1, [r3, #26]
-            *(buffer + 15) = 'o'; *(buffer + 21) = 'o'; *(buffer + 27) = '\n';
-1a000926:	73da      	strb	r2, [r3, #15]
-1a000928:	755a      	strb	r2, [r3, #21]
+            *(buffer + 19) = 'n';
+1a000910:	246e      	movs	r4, #110	; 0x6e
+1a000912:	74dc      	strb	r4, [r3, #19]
+            *(buffer + 20) = 's';
+1a000914:	2473      	movs	r4, #115	; 0x73
+1a000916:	751c      	strb	r4, [r3, #20]
+            *(buffer + 21) = 'o';
+1a000918:	755a      	strb	r2, [r3, #21]
+            *(buffer + 22) = 'l';
+1a00091a:	226c      	movs	r2, #108	; 0x6c
+1a00091c:	759a      	strb	r2, [r3, #22]
+            *(buffer + 23) = 'a';
+1a00091e:	2261      	movs	r2, #97	; 0x61
+1a000920:	75da      	strb	r2, [r3, #23]
+            *(buffer + 24) = ' ';
+1a000922:	7619      	strb	r1, [r3, #24]
+            *(buffer + 25) = '*';
+1a000924:	7658      	strb	r0, [r3, #25]
+            *(buffer + 26) = '\r';
+1a000926:	220d      	movs	r2, #13
+1a000928:	769a      	strb	r2, [r3, #26]
+            *(buffer + 27) = '\n';
 1a00092a:	220a      	movs	r2, #10
 1a00092c:	76da      	strb	r2, [r3, #27]
-                                                        *(buffer + 28) = 0;
+            *(buffer + 28) = 0;
 1a00092e:	2200      	movs	r2, #0
 1a000930:	771a      	strb	r2, [r3, #28]
 1a000932:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
