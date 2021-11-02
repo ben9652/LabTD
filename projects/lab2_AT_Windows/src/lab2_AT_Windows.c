@@ -58,15 +58,15 @@ void TIMER1_IRQHandler(void)
     textoEnviado = 1;
     esConsulta = 0;
 
-    buffer[index++] = 'C'; buffer[index++] = 'o'; buffer[index++] = 'u';
-    buffer[index++] = 'l'; buffer[index++] = 'd'; buffer[index++] = 'n';
-    buffer[index++] = '\''; buffer[index++] = 't'; buffer[index++] = ' ';
-    buffer[index++] = 'e'; buffer[index++] = 'x'; buffer[index++] = 'e';
-    buffer[index++] = 'c'; buffer[index++] = 'u'; buffer[index++] = 't';
-    buffer[index++] = 'e'; buffer[index++] = ' '; buffer[index++] = 'c';
-    buffer[index++] = 'o'; buffer[index++] = 'm'; buffer[index++] = 'm';
-    buffer[index++] = 'a'; buffer[index++] = 'n'; buffer[index++] = 'd';
-    buffer[index++] = '\r'; buffer[index++] = '\n';
+    buffer[index_buff++] = 'C'; buffer[index_buff++] = 'o'; buffer[index_buff++] = 'u';
+    buffer[index_buff++] = 'l'; buffer[index_buff++] = 'd'; buffer[index_buff++] = 'n';
+    buffer[index_buff++] = '\''; buffer[index_buff++] = 't'; buffer[index_buff++] = ' ';
+    buffer[index_buff++] = 'e'; buffer[index_buff++] = 'x'; buffer[index_buff++] = 'e';
+    buffer[index_buff++] = 'c'; buffer[index_buff++] = 'u'; buffer[index_buff++] = 't';
+    buffer[index_buff++] = 'e'; buffer[index_buff++] = ' '; buffer[index_buff++] = 'c';
+    buffer[index_buff++] = 'o'; buffer[index_buff++] = 'm'; buffer[index_buff++] = 'm';
+    buffer[index_buff++] = 'a'; buffer[index_buff++] = 'n'; buffer[index_buff++] = 'd';
+    buffer[index_buff++] = '\r'; buffer[index_buff++] = '\n';
 }
 
 void ConfigurarUART(LPC_USART_T *pUART, uint8_t enRBRInt)
@@ -145,7 +145,118 @@ void UART2_IRQHandler(void)
 {
     uint8_t dato = USB_UART->RBR & UART_RBR_MASKBIT;
 
-    
+    // Esta variable adquirirá el valor 2 cuando se detecte el caracter 27
+    // en la USART2. Esta variable al final servirá para captar que se
+    // apretó la tecla F2, que servirá para pasar al modo AT.
+    uint8_t esF2 = 0;
+
+    uint8_t charESC = 0;
+
+    uint8_t* comandoAT = (uint8_t*)malloc(50);
+    *comandoAT = 0;
+    uint8_t index_AT = 0;
+
+    if(dato == 27)
+        charESC = 1;
+    if(charESC && (dato == 79 || dato == 81))
+    {
+        if(dato == 79 && esF2 == 0)
+            esF2 = 1;
+        if(dato == 81 && esF2 == 1)
+        {
+            esF2 = 0;
+            charESC = 0;
+            modoAT = !modoAT;
+            *buffer = 0x1B;
+            *(buffer + 1) = '[';
+            *(buffer + 2) = '2';
+            *(buffer + 3) = 'J';
+            *(buffer + 4) = 0x1B;
+            *(buffer + 5) = '[';
+            *(buffer + 6) = '0';
+            *(buffer + 7) = ';';
+            *(buffer + 8) = '0';
+            *(buffer + 9) = 'f';
+            *(buffer + 10) = 0;
+
+            if(modoAT)
+                strcat(buffer, "* Modo consola *\r\n");
+        }
+    }
+    else if(modoAT)
+    {
+        if(charESC)
+        {
+            int x = 0;
+            x++;
+            x++;
+        }
+        else
+        {
+            index_buff = 1;
+
+            *buffer = dato;
+            *(comandoAT + index_AT++) = dato;
+
+            if(dato == 0x08)
+            {
+                if(index_AT > 0)
+                {
+                    *(comandoAT + --index_AT) = 0;
+                    *(comandoAT + --index_AT) = 0;
+                }
+
+                *(buffer + index_buff++) = 0x20;
+                *(buffer + index_buff++) = 0x08;
+            }
+
+            if(dato == '\r')
+            {
+                *(comandoAT + index_AT++) = '\n';
+                *(comandoAT + index_AT) = 0;
+                index_AT = 0;
+                
+                *(buffer + index_buff++) = '\n';
+
+                EnviarComandoAT(MODEM_UART, comandoAT);
+
+                for(uint8_t i = 0; i < strlen(comandoAT); i++)
+                {
+                    if(isalpha(comandoAT[i]))
+                        *(comandoAT + i) = toupper(*(comandoAT + i));
+                }
+
+                if(!strcmp(comandoAT, "AT+RESET\r\n"))
+                {
+                    modoAT = 0;
+                    *(buffer + index_buff++) = 0x1B;
+                    *(buffer + index_buff++) = '[';
+                    *(buffer + index_buff++) = '2';
+                    *(buffer + index_buff++) = 'J';
+                    *(buffer + index_buff++) = 0x1B;
+                    *(buffer + index_buff++) = '[';
+                    *(buffer + index_buff++) = '0';
+                    *(buffer + index_buff++) = ';';
+                    *(buffer + index_buff++) = '0';
+                    *(buffer + index_buff++) = 'f';
+                    *(buffer + index_buff) = 0;
+                }
+
+                memset(comandoAT, 0, 50);
+
+                // El timer empieza a contar
+                LPC_TIMER1->TCR = TIMER_ENABLE;
+
+                // Si el timer llega a hacer un match, significa
+                // que no se llegó a obtener ningún dato.
+                while(!textoEnviado && modoAT);
+
+                textoEnviado = 0;
+            }
+            
+            *(buffer + index_buff) = 0;
+        }
+    }
 }
 
 void UART3_IRQHandler(void)
@@ -254,7 +365,7 @@ void UART3_IRQHandler(void)
     }
 
     if(modoAT)
-        *(buffer + index++) = dato;
+        *(buffer + index_buff++) = dato;
 
     uint8_t idInterrupcion = MODEM_UART->IIR;
 }
@@ -267,144 +378,21 @@ int main(void)
     
     uint8_t readData = 0;
     uint8_t readError = 0;
-    uint8_t readDataConsola = 0;
-    uint8_t readErrorConsola = 0;
 
     uint8_t resultado = 0;
     uint8_t dato = 255;
     uint8_t resError = 0;
 
-    uint8_t* comandoAT = (uint8_t*)malloc(50);
-    *comandoAT = 0;
-    uint8_t index_AT = 0;
-
     contador = 0;
-
-    // Esta variable adquirirá el valor 2 cuando se detecte el caracter 27
-    // en la USART2. Esta variable al final servirá para captar que se
-    // apretó la tecla F2, que servirá para pasar al modo AT.
-    uint8_t esF2 = 0;
-
-    uint8_t charESC = 0;
 
     ConfigurarPuertosLaboratorio();
     ConfigurarInterrupciones();
-    ConfigurarUART(USB_UART, 0);
+    ConfigurarUART(USB_UART, 1);
     ConfigurarUART(MODEM_UART, 1);
 
     while (1)
     {
         led_encendido = LeerLEDs();
-
-        if(UARTLeerByte(USB_UART, &readDataConsola, &readErrorConsola))
-        {
-            if(!readErrorConsola)
-            {
-                if(readDataConsola == 27)
-                    charESC = 1;
-                if(charESC && (readDataConsola == 79 || readDataConsola == 81))
-                {
-                    if(readDataConsola == 79 && esF2 == 0)
-                        esF2 = 1;
-                    if(readDataConsola == 81 && esF2 == 1)
-                    {
-                        esF2 = 0;
-                        charESC = 0;
-                        modoAT = !modoAT;
-                        *buffer = 0x1B;
-                        *(buffer + 1) = '[';
-                        *(buffer + 2) = '2';
-                        *(buffer + 3) = 'J';
-                        *(buffer + 4) = 0x1B;
-                        *(buffer + 5) = '[';
-                        *(buffer + 6) = '0';
-                        *(buffer + 7) = ';';
-                        *(buffer + 8) = '0';
-                        *(buffer + 9) = 'f';
-                        *(buffer + 10) = 0;
-
-                        if(modoAT)
-                            strcat(buffer, "* Modo consola *\r\n");
-                    }
-                }
-                else if(modoAT)
-                {
-                    if(charESC)
-                    {
-                        int x = 0;
-                        x++;
-                        x++;
-                    }
-                    else
-                    {
-                        index = 1;
-
-                        *buffer = readDataConsola;
-                        *(comandoAT + index_AT++) = readDataConsola;
-
-                        if(readDataConsola == 0x08)
-                        {
-                            if(index_AT > 0)
-                            {
-                                *(comandoAT + --index_AT) = 0;
-                                *(comandoAT + --index_AT) = 0;
-                            }
-
-                            *(buffer + index++) = 0x20;
-                            *(buffer + index++) = 0x08;
-                        }
-
-                        if(readDataConsola == '\r')
-                        {
-                            *(comandoAT + index_AT++) = '\n';
-                            *(comandoAT + index_AT) = 0;
-                            index_AT = 0;
-                            
-                            *(buffer + index++) = '\n';
-
-                            EnviarComandoAT(MODEM_UART, comandoAT);
-
-                            for(uint8_t i = 0; i < strlen(comandoAT); i++)
-                            {
-                                if(isalpha(comandoAT[i]))
-                                    *(comandoAT + i) = toupper(*(comandoAT + i));
-                            }
-
-                            if(!strcmp(comandoAT, "AT+RESET\r\n"))
-                            {
-                                modoAT = 0;
-                                *(buffer + index++) = 0x1B;
-                                *(buffer + index++) = '[';
-                                *(buffer + index++) = '2';
-                                *(buffer + index++) = 'J';
-                                *(buffer + index++) = 0x1B;
-                                *(buffer + index++) = '[';
-                                *(buffer + index++) = '0';
-                                *(buffer + index++) = ';';
-                                *(buffer + index++) = '0';
-                                *(buffer + index++) = 'f';
-                                *(buffer + index) = 0;
-                            }
-
-                            memset(comandoAT, 0, 50);
-
-                            // El timer empieza a contar
-                            LPC_TIMER1->TCR = TIMER_ENABLE;
-
-                            // Si el timer llega a hacer un match, significa
-                            // que no se llegó a obtener ningún dato.
-                            while(!textoEnviado && modoAT);
-
-                            textoEnviado = 0;
-                        }
-                        
-                        *(buffer + index) = 0;
-                    }
-                }
-            }
-            else
-                readErrorConsola = 0;
-        }
 
         uint8_t entersLoop = 0;
         while(arrayLength(buffer))

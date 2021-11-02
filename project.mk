@@ -20,5 +20,5 @@
 # Project path
 PROJECT_PATH = projects
 # Project name
-PROJECT_NAME = lab2_AT
+PROJECT_NAME = lab2_AT_Windows
 

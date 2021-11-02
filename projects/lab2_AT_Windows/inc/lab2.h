@@ -62,7 +62,7 @@ extern "C" {
 static uint8_t modoAT = 0;
 static uint8_t* buffer;    // Para almacenar caracteres
 static uint8_t* aux;
-static uint8_t index;
+static uint8_t index_buff;
 static uint8_t textoEnviado = 0;
 static uint8_t esConsulta = 0;
 static uint8_t contador;
