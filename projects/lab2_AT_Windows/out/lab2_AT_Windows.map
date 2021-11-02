@@ -7781,186 +7781,186 @@ END GROUP
                 0x000000001a000814       0x54 projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/lab2_AT_Windows.o
                 0x000000001a000814                EnviarComandoAT
  .text.UART2_IRQHandler
-                0x000000001a000868      0x1ec projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/lab2_AT_Windows.o
+                0x000000001a000868      0x1f0 projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/lab2_AT_Windows.o
                 0x000000001a000868                UART2_IRQHandler
  .text.UART3_IRQHandler
-                0x000000001a000a54      0x1e0 projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/lab2_AT_Windows.o
-                0x000000001a000a54                UART3_IRQHandler
- .text.main     0x000000001a000c34       0xb4 projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/lab2_AT_Windows.o
-                0x000000001a000c34                main
+                0x000000001a000a58      0x1e0 projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/lab2_AT_Windows.o
+                0x000000001a000a58                UART3_IRQHandler
+ .text.main     0x000000001a000c38       0xb4 projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/lab2_AT_Windows.o
+                0x000000001a000c38                main
  .text.initialise_monitor_handles
-                0x000000001a000ce8        0x2 projects/lab2_AT_Windows/out/libs/cmsis_core//src/armv7m_startup.o
-                0x000000001a000ce8                initialise_monitor_handles
- *fill*         0x000000001a000cea        0x2 ff
+                0x000000001a000cec        0x2 projects/lab2_AT_Windows/out/libs/cmsis_core//src/armv7m_startup.o
+                0x000000001a000cec                initialise_monitor_handles
+ *fill*         0x000000001a000cee        0x2 ff
  .text.Reset_Handler
-                0x000000001a000cec       0x88 projects/lab2_AT_Windows/out/libs/cmsis_core//src/armv7m_startup.o
-                0x000000001a000cec                Reset_Handler
- .text._fini    0x000000001a000d74        0x2 projects/lab2_AT_Windows/out/libs/cmsis_core//src/armv7m_startup.o
-                0x000000001a000d74                _fini
- .text._init    0x000000001a000d76        0x2 projects/lab2_AT_Windows/out/libs/cmsis_core//src/armv7m_startup.o
-                0x000000001a000d76                _init
- .text._sbrk_r  0x000000001a000d78       0x20 projects/lab2_AT_Windows/out/libs/sys_newlib//src/system.o
-                0x000000001a000d78                _sbrk_r
- .text.Led_On   0x000000001a000d98       0x78 projects/lab2_AT_Windows/out/modules/drivers_bm//src/led.o
-                0x000000001a000d98                Led_On
- .text.Led_Off  0x000000001a000e10       0x78 projects/lab2_AT_Windows/out/modules/drivers_bm//src/led.o
-                0x000000001a000e10                Led_Off
+                0x000000001a000cf0       0x88 projects/lab2_AT_Windows/out/libs/cmsis_core//src/armv7m_startup.o
+                0x000000001a000cf0                Reset_Handler
+ .text._fini    0x000000001a000d78        0x2 projects/lab2_AT_Windows/out/libs/cmsis_core//src/armv7m_startup.o
+                0x000000001a000d78                _fini
+ .text._init    0x000000001a000d7a        0x2 projects/lab2_AT_Windows/out/libs/cmsis_core//src/armv7m_startup.o
+                0x000000001a000d7a                _init
+ .text._sbrk_r  0x000000001a000d7c       0x20 projects/lab2_AT_Windows/out/libs/sys_newlib//src/system.o
+                0x000000001a000d7c                _sbrk_r
+ .text.Led_On   0x000000001a000d9c       0x78 projects/lab2_AT_Windows/out/modules/drivers_bm//src/led.o
+                0x000000001a000d9c                Led_On
+ .text.Led_Off  0x000000001a000e14       0x78 projects/lab2_AT_Windows/out/modules/drivers_bm//src/led.o
+                0x000000001a000e14                Led_Off
  .text.Led_Toggle
-                0x000000001a000e88       0x78 projects/lab2_AT_Windows/out/modules/drivers_bm//src/led.o
-                0x000000001a000e88                Led_Toggle
+                0x000000001a000e8c       0x78 projects/lab2_AT_Windows/out/modules/drivers_bm//src/led.o
+                0x000000001a000e8c                Led_Toggle
  .text.Board_LED_Init
-                0x000000001a000f00       0x44 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a000f04       0x44 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
  .text.Board_TEC_Init
-                0x000000001a000f44       0x40 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a000f48       0x40 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
  .text.Board_GPIO_Init
-                0x000000001a000f84       0x40 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a000f88       0x40 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
  .text.Board_ADC_Init
-                0x000000001a000fc4       0x30 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a000fc8       0x30 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
  .text.Board_SPI_Init
-                0x000000001a000ff4       0x38 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a000ff8       0x38 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
  .text.Board_I2C_Init
-                0x000000001a00102c       0x24 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a001030       0x24 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
  .text.Board_Debug_Init
-                0x000000001a001050       0x24 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
-                0x000000001a001050                Board_Debug_Init
+                0x000000001a001054       0x24 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a001054                Board_Debug_Init
  .text.Board_Init
-                0x000000001a001074       0x2c projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
-                0x000000001a001074                Board_Init
+                0x000000001a001078       0x2c projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a001078                Board_Init
  .text.__stdio_init
-                0x000000001a0010a0        0x8 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
-                0x000000001a0010a0                __stdio_init
+                0x000000001a0010a4        0x8 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+                0x000000001a0010a4                __stdio_init
  .text.Board_SetupMuxing
-                0x000000001a0010a8       0x38 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
-                0x000000001a0010a8                Board_SetupMuxing
+                0x000000001a0010ac       0x38 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
+                0x000000001a0010ac                Board_SetupMuxing
  .text.Board_SetupClocking
-                0x000000001a0010e0       0x6c projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
-                0x000000001a0010e0                Board_SetupClocking
+                0x000000001a0010e4       0x6c projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
+                0x000000001a0010e4                Board_SetupClocking
  .text.Board_SystemInit
-                0x000000001a00114c        0xc projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
-                0x000000001a00114c                Board_SystemInit
+                0x000000001a001150        0xc projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
+                0x000000001a001150                Board_SystemInit
  .text.Chip_UART_GetIndex
-                0x000000001a001158       0x2c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
+                0x000000001a00115c       0x2c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
  .text.Chip_UART_Init
-                0x000000001a001184       0x54 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
-                0x000000001a001184                Chip_UART_Init
+                0x000000001a001188       0x54 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
+                0x000000001a001188                Chip_UART_Init
  .text.Chip_UART_SetBaudFDR
-                0x000000001a0011d8       0xe8 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
-                0x000000001a0011d8                Chip_UART_SetBaudFDR
+                0x000000001a0011dc       0xe8 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
+                0x000000001a0011dc                Chip_UART_SetBaudFDR
  .text.Chip_ADC_GetClockIndex
-                0x000000001a0012c0       0x14 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a0012c4       0x14 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
  .text.getClkDiv
-                0x000000001a0012d4       0x32 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
- *fill*         0x000000001a001306        0x2 ff
+                0x000000001a0012d8       0x32 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+ *fill*         0x000000001a00130a        0x2 ff
  .text.Chip_ADC_Init
-                0x000000001a001308       0x40 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
-                0x000000001a001308                Chip_ADC_Init
+                0x000000001a00130c       0x40 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a00130c                Chip_ADC_Init
  .text.Chip_ADC_SetSampleRate
-                0x000000001a001348       0x32 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
-                0x000000001a001348                Chip_ADC_SetSampleRate
+                0x000000001a00134c       0x32 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a00134c                Chip_ADC_SetSampleRate
  .text.Chip_ADC_SetResolution
-                0x000000001a00137a        0xc projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
-                0x000000001a00137a                Chip_ADC_SetResolution
- *fill*         0x000000001a001386        0x2 ff
+                0x000000001a00137e        0xc projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+                0x000000001a00137e                Chip_ADC_SetResolution
+ *fill*         0x000000001a00138a        0x2 ff
  .text.pll_calc_divs
-                0x000000001a001388       0xa0 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a00138c       0xa0 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
  .text.pll_get_frac
-                0x000000001a001428      0x10c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a00142c      0x10c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
  .text.Chip_Clock_FindBaseClock
-                0x000000001a001534       0x4c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a001538       0x4c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
  .text.Chip_Clock_EnableCrystal
-                0x000000001a001580       0x4c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a001580                Chip_Clock_EnableCrystal
+                0x000000001a001584       0x4c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a001584                Chip_Clock_EnableCrystal
  .text.Chip_Clock_GetDividerSource
-                0x000000001a0015cc       0x1c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a0015cc                Chip_Clock_GetDividerSource
+                0x000000001a0015d0       0x1c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a0015d0                Chip_Clock_GetDividerSource
  .text.Chip_Clock_GetDividerDivisor
-                0x000000001a0015e8       0x1c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a0015e8                Chip_Clock_GetDividerDivisor
+                0x000000001a0015ec       0x1c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a0015ec                Chip_Clock_GetDividerDivisor
  .text.Chip_Clock_GetClockInputHz
-                0x000000001a001604       0xb8 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a001604                Chip_Clock_GetClockInputHz
+                0x000000001a001608       0xb8 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a001608                Chip_Clock_GetClockInputHz
  .text.Chip_Clock_CalcMainPLLValue
-                0x000000001a0016bc       0x80 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a0016bc                Chip_Clock_CalcMainPLLValue
+                0x000000001a0016c0       0x80 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a0016c0                Chip_Clock_CalcMainPLLValue
  .text.Chip_Clock_GetMainPLLHz
-                0x000000001a00173c       0x6c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a00173c                Chip_Clock_GetMainPLLHz
+                0x000000001a001740       0x6c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a001740                Chip_Clock_GetMainPLLHz
  .text.Chip_Clock_GetDivRate
-                0x000000001a0017a8       0x22 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
- *fill*         0x000000001a0017ca        0x2 ff
+                0x000000001a0017ac       0x22 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+ *fill*         0x000000001a0017ce        0x2 ff
  .text.Chip_Clock_SetBaseClock
-                0x000000001a0017cc       0x58 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a0017cc                Chip_Clock_SetBaseClock
+                0x000000001a0017d0       0x58 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a0017d0                Chip_Clock_SetBaseClock
  .text.Chip_Clock_GetBaseClock
-                0x000000001a001824       0x26 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a001824                Chip_Clock_GetBaseClock
+                0x000000001a001828       0x26 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a001828                Chip_Clock_GetBaseClock
  .text.Chip_Clock_GetBaseClocktHz
-                0x000000001a00184a        0xc projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a00184a                Chip_Clock_GetBaseClocktHz
- *fill*         0x000000001a001856        0x2 ff
+                0x000000001a00184e        0xc projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a00184e                Chip_Clock_GetBaseClocktHz
+ *fill*         0x000000001a00185a        0x2 ff
  .text.Chip_Clock_EnableOpts
-                0x000000001a001858       0x3c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a001858                Chip_Clock_EnableOpts
+                0x000000001a00185c       0x3c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a00185c                Chip_Clock_EnableOpts
  .text.Chip_Clock_Enable
-                0x000000001a001894       0x34 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a001894                Chip_Clock_Enable
+                0x000000001a001898       0x34 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a001898                Chip_Clock_Enable
  .text.Chip_Clock_GetRate
-                0x000000001a0018c8       0x4c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
-                0x000000001a0018c8                Chip_Clock_GetRate
+                0x000000001a0018cc       0x4c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+                0x000000001a0018cc                Chip_Clock_GetRate
  .text.SystemCoreClockUpdate
-                0x000000001a001914       0x14 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/chip_18xx_43xx.o
-                0x000000001a001914                SystemCoreClockUpdate
+                0x000000001a001918       0x14 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/chip_18xx_43xx.o
+                0x000000001a001918                SystemCoreClockUpdate
  .text.Chip_SetupCoreClock
-                0x000000001a001928      0x154 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
-                0x000000001a001928                Chip_SetupCoreClock
+                0x000000001a00192c      0x154 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
+                0x000000001a00192c                Chip_SetupCoreClock
  .text.Chip_GPIO_Init
-                0x000000001a001a7c        0x2 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/gpio_18xx_43xx.o
-                0x000000001a001a7c                Chip_GPIO_Init
- *fill*         0x000000001a001a7e        0x2 ff
+                0x000000001a001a80        0x2 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/gpio_18xx_43xx.o
+                0x000000001a001a80                Chip_GPIO_Init
+ *fill*         0x000000001a001a82        0x2 ff
  .text.Chip_SSP_GetClockIndex
-                0x000000001a001a80       0x14 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
+                0x000000001a001a84       0x14 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
  .text.Chip_SSP_GetPeriphClockIndex
-                0x000000001a001a94       0x18 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
+                0x000000001a001a98       0x18 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
  .text.Chip_SSP_SetClockRate
-                0x000000001a001aac       0x12 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
-                0x000000001a001aac                Chip_SSP_SetClockRate
+                0x000000001a001ab0       0x12 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
+                0x000000001a001ab0                Chip_SSP_SetClockRate
  .text.Chip_SSP_SetBitRate
-                0x000000001a001abe       0x3e projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
-                0x000000001a001abe                Chip_SSP_SetBitRate
+                0x000000001a001ac2       0x3e projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
+                0x000000001a001ac2                Chip_SSP_SetBitRate
  .text.Chip_SSP_Init
-                0x000000001a001afc       0x38 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
-                0x000000001a001afc                Chip_SSP_Init
+                0x000000001a001b00       0x38 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
+                0x000000001a001b00                Chip_SSP_Init
  .text.Chip_I2C_EventHandler
-                0x000000001a001b34       0x20 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
-                0x000000001a001b34                Chip_I2C_EventHandler
+                0x000000001a001b38       0x20 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
+                0x000000001a001b38                Chip_I2C_EventHandler
  .text.Chip_I2C_Init
-                0x000000001a001b54       0x24 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
-                0x000000001a001b54                Chip_I2C_Init
+                0x000000001a001b58       0x24 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
+                0x000000001a001b58                Chip_I2C_Init
  .text.Chip_I2C_SetClockRate
-                0x000000001a001b78       0x38 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
-                0x000000001a001b78                Chip_I2C_SetClockRate
+                0x000000001a001b7c       0x38 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
+                0x000000001a001b7c                Chip_I2C_SetClockRate
  .text.SystemInit
-                0x000000001a001bb0       0x40 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/sysinit.o
-                0x000000001a001bb0                SystemInit
- .text          0x000000001a001bf0       0x30 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_aeabi_uldivmod.o)
-                0x000000001a001bf0                __aeabi_uldivmod
- .text          0x000000001a001c20      0x2dc /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
-                0x000000001a001c20                __udivmoddi4
- .text          0x000000001a001efc        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_dvmd_tls.o)
-                0x000000001a001efc                __aeabi_ldiv0
-                0x000000001a001efc                __aeabi_idiv0
- .text          0x000000001a001f00       0x50 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
-                0x000000001a001f00                __libc_init_array
- .text          0x000000001a001f50       0x20 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-malloc.o)
-                0x000000001a001f50                malloc
-                0x000000001a001f60                free
- .text          0x000000001a001f70       0x9c /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memset.o)
-                0x000000001a001f70                memset
- .text          0x000000001a00200c       0x90 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-freer.o)
-                0x000000001a00200c                _free_r
- .text          0x000000001a00209c       0xbc /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
-                0x000000001a00209c                _malloc_r
- *fill*         0x000000001a002158        0x8 ff
+                0x000000001a001bb4       0x40 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/sysinit.o
+                0x000000001a001bb4                SystemInit
+ .text          0x000000001a001bf4       0x30 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_aeabi_uldivmod.o)
+                0x000000001a001bf4                __aeabi_uldivmod
+ .text          0x000000001a001c24      0x2dc /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
+                0x000000001a001c24                __udivmoddi4
+ .text          0x000000001a001f00        0x4 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_dvmd_tls.o)
+                0x000000001a001f00                __aeabi_ldiv0
+                0x000000001a001f00                __aeabi_idiv0
+ .text          0x000000001a001f04       0x50 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
+                0x000000001a001f04                __libc_init_array
+ .text          0x000000001a001f54       0x20 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-malloc.o)
+                0x000000001a001f54                malloc
+                0x000000001a001f64                free
+ .text          0x000000001a001f74       0x9c /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memset.o)
+                0x000000001a001f74                memset
+ .text          0x000000001a002010       0x90 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-freer.o)
+                0x000000001a002010                _free_r
+ .text          0x000000001a0020a0       0xbc /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+                0x000000001a0020a0                _malloc_r
+ *fill*         0x000000001a00215c        0x4 ff
  .text          0x000000001a002160      0x2dc /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-strcmp.o)
                 0x000000001a002168                strcmp
  *fill*         0x000000001a00243c        0x4 ff
@@ -8193,74 +8193,74 @@ END GROUP
                 0x00000000100000d8                _end_noinit = .
                 0x00000000100000d8                PROVIDE (_pvHeapStart, .)
                 0x0000000010008000                PROVIDE (_vStackTop, (__top_RamLoc32 - 0x0))
-                0xffffffff53ff6ba2                PROVIDE (__valid_user_code_checksum, (0x0 - ((((((_vStackTop + (Reset_Handler + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
+                0xffffffff53ff6b9e                PROVIDE (__valid_user_code_checksum, (0x0 - ((((((_vStackTop + (Reset_Handler + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
 OUTPUT(projects/lab2_AT_Windows/out/lab2_AT_Windows.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x15970
+.debug_info     0x0000000000000000    0x15971
  .debug_info    0x0000000000000000     0x1126 projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/myLib.o
  .debug_info    0x0000000000001126     0x10bb projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/configuracion.o
- .debug_info    0x00000000000021e1     0x180b projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/lab2_AT_Windows.o
- .debug_info    0x00000000000039ec      0x308 projects/lab2_AT_Windows/out/libs/cmsis_core//src/armv7m_startup.o
- .debug_info    0x0000000000003cf4      0xf34 projects/lab2_AT_Windows/out/libs/sys_newlib//src/system.o
- .debug_info    0x0000000000004c28      0xd0f projects/lab2_AT_Windows/out/modules/drivers_bm//src/led.o
- .debug_info    0x0000000000005937     0x210c projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
- .debug_info    0x0000000000007a43     0x14ab projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
- .debug_info    0x0000000000008eee     0x164c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
- .debug_info    0x000000000000a53a      0xaed projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
- .debug_info    0x000000000000b027     0x18e4 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
- .debug_info    0x000000000000c90b      0xc3b projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/chip_18xx_43xx.o
- .debug_info    0x000000000000d546      0xaae projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
- .debug_info    0x000000000000dff4      0x220 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/gpio_18xx_43xx.o
- .debug_info    0x000000000000e214     0x1605 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
- .debug_info    0x000000000000f819     0x1361 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
- .debug_info    0x0000000000010b7a       0x3f projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/crp.o
- .debug_info    0x0000000000010bb9      0xbaa projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/sysinit.o
- .debug_info    0x0000000000011763       0x74 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/vendor_interrupt.o
- .debug_info    0x00000000000117d7       0xcf /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_info    0x00000000000118a6      0xc24 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
- .debug_info    0x00000000000124ca       0xd3 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_dvmd_tls.o)
- .debug_info    0x000000000001259d       0xc0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-ctype_.o)
- .debug_info    0x000000000001265d      0x110 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
- .debug_info    0x000000000001276d      0x91d /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-malloc.o)
- .debug_info    0x000000000001308a      0x916 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memset.o)
- .debug_info    0x00000000000139a0      0xa51 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-freer.o)
- .debug_info    0x00000000000143f1      0xb1f /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
- .debug_info    0x0000000000014f10       0xe0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-strcmp.o)
- .debug_info    0x0000000000014ff0       0xe0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-strlen.o)
- .debug_info    0x00000000000150d0      0x8a0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-impure.o)
+ .debug_info    0x00000000000021e1     0x180c projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/lab2_AT_Windows.o
+ .debug_info    0x00000000000039ed      0x308 projects/lab2_AT_Windows/out/libs/cmsis_core//src/armv7m_startup.o
+ .debug_info    0x0000000000003cf5      0xf34 projects/lab2_AT_Windows/out/libs/sys_newlib//src/system.o
+ .debug_info    0x0000000000004c29      0xd0f projects/lab2_AT_Windows/out/modules/drivers_bm//src/led.o
+ .debug_info    0x0000000000005938     0x210c projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+ .debug_info    0x0000000000007a44     0x14ab projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
+ .debug_info    0x0000000000008eef     0x164c projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
+ .debug_info    0x000000000000a53b      0xaed projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+ .debug_info    0x000000000000b028     0x18e4 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+ .debug_info    0x000000000000c90c      0xc3b projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/chip_18xx_43xx.o
+ .debug_info    0x000000000000d547      0xaae projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
+ .debug_info    0x000000000000dff5      0x220 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/gpio_18xx_43xx.o
+ .debug_info    0x000000000000e215     0x1605 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
+ .debug_info    0x000000000000f81a     0x1361 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
+ .debug_info    0x0000000000010b7b       0x3f projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/crp.o
+ .debug_info    0x0000000000010bba      0xbaa projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/sysinit.o
+ .debug_info    0x0000000000011764       0x74 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/vendor_interrupt.o
+ .debug_info    0x00000000000117d8       0xcf /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x00000000000118a7      0xc24 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_info    0x00000000000124cb       0xd3 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x000000000001259e       0xc0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-ctype_.o)
+ .debug_info    0x000000000001265e      0x110 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
+ .debug_info    0x000000000001276e      0x91d /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-malloc.o)
+ .debug_info    0x000000000001308b      0x916 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memset.o)
+ .debug_info    0x00000000000139a1      0xa51 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-freer.o)
+ .debug_info    0x00000000000143f2      0xb1f /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_info    0x0000000000014f11       0xe0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-strcmp.o)
+ .debug_info    0x0000000000014ff1       0xe0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-strlen.o)
+ .debug_info    0x00000000000150d1      0x8a0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-impure.o)
 
-.debug_abbrev   0x0000000000000000     0x3945
+.debug_abbrev   0x0000000000000000     0x395f
  .debug_abbrev  0x0000000000000000      0x337 projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/myLib.o
  .debug_abbrev  0x0000000000000337      0x232 projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/configuracion.o
- .debug_abbrev  0x0000000000000569      0x3b3 projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/lab2_AT_Windows.o
- .debug_abbrev  0x000000000000091c      0x10d projects/lab2_AT_Windows/out/libs/cmsis_core//src/armv7m_startup.o
- .debug_abbrev  0x0000000000000a29      0x2b7 projects/lab2_AT_Windows/out/libs/sys_newlib//src/system.o
- .debug_abbrev  0x0000000000000ce0      0x1f8 projects/lab2_AT_Windows/out/modules/drivers_bm//src/led.o
- .debug_abbrev  0x0000000000000ed8      0x46f projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
- .debug_abbrev  0x0000000000001347      0x2eb projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
- .debug_abbrev  0x0000000000001632      0x3b3 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
- .debug_abbrev  0x00000000000019e5      0x1f5 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
- .debug_abbrev  0x0000000000001bda      0x36f projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
- .debug_abbrev  0x0000000000001f49      0x1bf projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/chip_18xx_43xx.o
- .debug_abbrev  0x0000000000002108      0x1ff projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
- .debug_abbrev  0x0000000000002307      0x100 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/gpio_18xx_43xx.o
- .debug_abbrev  0x0000000000002407      0x33d projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
- .debug_abbrev  0x0000000000002744      0x340 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
- .debug_abbrev  0x0000000000002a84       0x36 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/crp.o
- .debug_abbrev  0x0000000000002aba      0x216 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/sysinit.o
- .debug_abbrev  0x0000000000002cd0       0x74 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/vendor_interrupt.o
- .debug_abbrev  0x0000000000002d44       0x14 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_abbrev  0x0000000000002d58      0x18c /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
- .debug_abbrev  0x0000000000002ee4       0x14 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_dvmd_tls.o)
- .debug_abbrev  0x0000000000002ef8       0x5e /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-ctype_.o)
- .debug_abbrev  0x0000000000002f56       0xba /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
- .debug_abbrev  0x0000000000003010      0x1c0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-malloc.o)
- .debug_abbrev  0x00000000000031d0      0x197 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memset.o)
- .debug_abbrev  0x0000000000003367      0x1ef /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-freer.o)
- .debug_abbrev  0x0000000000003556      0x274 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
- .debug_abbrev  0x00000000000037ca       0x14 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-strcmp.o)
- .debug_abbrev  0x00000000000037de       0x14 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-strlen.o)
- .debug_abbrev  0x00000000000037f2      0x153 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000000569      0x3cd projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/lab2_AT_Windows.o
+ .debug_abbrev  0x0000000000000936      0x10d projects/lab2_AT_Windows/out/libs/cmsis_core//src/armv7m_startup.o
+ .debug_abbrev  0x0000000000000a43      0x2b7 projects/lab2_AT_Windows/out/libs/sys_newlib//src/system.o
+ .debug_abbrev  0x0000000000000cfa      0x1f8 projects/lab2_AT_Windows/out/modules/drivers_bm//src/led.o
+ .debug_abbrev  0x0000000000000ef2      0x46f projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+ .debug_abbrev  0x0000000000001361      0x2eb projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
+ .debug_abbrev  0x000000000000164c      0x3b3 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
+ .debug_abbrev  0x00000000000019ff      0x1f5 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+ .debug_abbrev  0x0000000000001bf4      0x36f projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+ .debug_abbrev  0x0000000000001f63      0x1bf projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/chip_18xx_43xx.o
+ .debug_abbrev  0x0000000000002122      0x1ff projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
+ .debug_abbrev  0x0000000000002321      0x100 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/gpio_18xx_43xx.o
+ .debug_abbrev  0x0000000000002421      0x33d projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
+ .debug_abbrev  0x000000000000275e      0x340 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
+ .debug_abbrev  0x0000000000002a9e       0x36 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/crp.o
+ .debug_abbrev  0x0000000000002ad4      0x216 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/sysinit.o
+ .debug_abbrev  0x0000000000002cea       0x74 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/vendor_interrupt.o
+ .debug_abbrev  0x0000000000002d5e       0x14 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_abbrev  0x0000000000002d72      0x18c /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_abbrev  0x0000000000002efe       0x14 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x0000000000002f12       0x5e /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-ctype_.o)
+ .debug_abbrev  0x0000000000002f70       0xba /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
+ .debug_abbrev  0x000000000000302a      0x1c0 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-malloc.o)
+ .debug_abbrev  0x00000000000031ea      0x197 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memset.o)
+ .debug_abbrev  0x0000000000003381      0x1ef /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-freer.o)
+ .debug_abbrev  0x0000000000003570      0x274 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_abbrev  0x00000000000037e4       0x14 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-strcmp.o)
+ .debug_abbrev  0x00000000000037f8       0x14 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-strlen.o)
+ .debug_abbrev  0x000000000000380c      0x153 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-impure.o)
 
 .debug_loc      0x0000000000000000     0x81d3
  .debug_loc     0x0000000000000000      0x806 projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/myLib.o
@@ -8488,38 +8488,38 @@ OUTPUT(projects/lab2_AT_Windows/out/lab2_AT_Windows.elf elf32-littlearm)
  .debug_macro   0x0000000000009244      0x421 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/sysinit.o
  .debug_macro   0x0000000000009665       0x1d projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/vendor_interrupt.o
 
-.debug_line     0x0000000000000000     0x8c02
+.debug_line     0x0000000000000000     0x8c03
  .debug_line    0x0000000000000000      0x8dc projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/myLib.o
  .debug_line    0x00000000000008dc      0x6bd projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/configuracion.o
- .debug_line    0x0000000000000f99      0x919 projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/lab2_AT_Windows.o
- .debug_line    0x00000000000018b2       0xf7 projects/lab2_AT_Windows/out/libs/cmsis_core//src/armv7m_startup.o
- .debug_line    0x00000000000019a9      0x3bc projects/lab2_AT_Windows/out/libs/sys_newlib//src/system.o
- .debug_line    0x0000000000001d65      0x75d projects/lab2_AT_Windows/out/modules/drivers_bm//src/led.o
- .debug_line    0x00000000000024c2      0x969 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
- .debug_line    0x0000000000002e2b      0x788 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
- .debug_line    0x00000000000035b3      0x904 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
- .debug_line    0x0000000000003eb7      0x748 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
- .debug_line    0x00000000000045ff      0xa3f projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
- .debug_line    0x000000000000503e      0x665 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/chip_18xx_43xx.o
- .debug_line    0x00000000000056a3      0x6c7 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
- .debug_line    0x0000000000005d6a      0x62a projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/gpio_18xx_43xx.o
- .debug_line    0x0000000000006394      0xa96 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
- .debug_line    0x0000000000006e2a      0x8fc projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
- .debug_line    0x0000000000007726       0x44 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/crp.o
- .debug_line    0x000000000000776a      0x72e projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/sysinit.o
- .debug_line    0x0000000000007e98       0x61 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/vendor_interrupt.o
- .debug_line    0x0000000000007ef9       0x67 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_aeabi_uldivmod.o)
- .debug_line    0x0000000000007f60      0x258 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
- .debug_line    0x00000000000081b8       0x67 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_dvmd_tls.o)
- .debug_line    0x000000000000821f       0x67 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-ctype_.o)
- .debug_line    0x0000000000008286       0xbe /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
- .debug_line    0x0000000000008344      0x15a /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-malloc.o)
- .debug_line    0x000000000000849e      0x17c /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memset.o)
- .debug_line    0x000000000000861a      0x165 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-freer.o)
- .debug_line    0x000000000000877f      0x1a8 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
- .debug_line    0x0000000000008927      0x13a /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-strcmp.o)
- .debug_line    0x0000000000008a61       0xb2 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-strlen.o)
- .debug_line    0x0000000000008b13       0xef /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-impure.o)
+ .debug_line    0x0000000000000f99      0x91a projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/lab2_AT_Windows.o
+ .debug_line    0x00000000000018b3       0xf7 projects/lab2_AT_Windows/out/libs/cmsis_core//src/armv7m_startup.o
+ .debug_line    0x00000000000019aa      0x3bc projects/lab2_AT_Windows/out/libs/sys_newlib//src/system.o
+ .debug_line    0x0000000000001d66      0x75d projects/lab2_AT_Windows/out/modules/drivers_bm//src/led.o
+ .debug_line    0x00000000000024c3      0x969 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board.o
+ .debug_line    0x0000000000002e2c      0x788 projects/lab2_AT_Windows/out/libs/lpc_open/boards/edu_ciaa_nxp/src/board_sysinit.o
+ .debug_line    0x00000000000035b4      0x904 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/uart_18xx_43xx.o
+ .debug_line    0x0000000000003eb8      0x748 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/adc_18xx_43xx.o
+ .debug_line    0x0000000000004600      0xa3f projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/clock_18xx_43xx.o
+ .debug_line    0x000000000000503f      0x665 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/chip_18xx_43xx.o
+ .debug_line    0x00000000000056a4      0x6c7 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/sysinit_18xx_43xx.o
+ .debug_line    0x0000000000005d6b      0x62a projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/gpio_18xx_43xx.o
+ .debug_line    0x0000000000006395      0xa96 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/ssp_18xx_43xx.o
+ .debug_line    0x0000000000006e2b      0x8fc projects/lab2_AT_Windows/out/libs/lpc_open/lpc_chip_43xx/src/i2c_18xx_43xx.o
+ .debug_line    0x0000000000007727       0x44 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/crp.o
+ .debug_line    0x000000000000776b      0x72e projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/sysinit.o
+ .debug_line    0x0000000000007e99       0x61 projects/lab2_AT_Windows/out/libs/lpc_open/lpc_startup/src/vendor_interrupt.o
+ .debug_line    0x0000000000007efa       0x67 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x0000000000007f61      0x258 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x00000000000081b9       0x67 /usr/lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0000000000008220       0x67 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-ctype_.o)
+ .debug_line    0x0000000000008287       0xbe /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-init.o)
+ .debug_line    0x0000000000008345      0x15a /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-malloc.o)
+ .debug_line    0x000000000000849f      0x17c /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-memset.o)
+ .debug_line    0x000000000000861b      0x165 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-freer.o)
+ .debug_line    0x0000000000008780      0x1a8 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_line    0x0000000000008928      0x13a /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-strcmp.o)
+ .debug_line    0x0000000000008a62       0xb2 /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-strlen.o)
+ .debug_line    0x0000000000008b14       0xef /usr/lib/gcc/arm-none-eabi/6.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libc_nano.a(lib_a-impure.o)
 
 .debug_str      0x0000000000000000    0x1f0cd
  .debug_str     0x0000000000000000    0x190aa projects/lab2_AT_Windows/out/projects/lab2_AT_Windows/src/myLib.o
