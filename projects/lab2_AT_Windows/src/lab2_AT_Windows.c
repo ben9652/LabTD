@@ -150,42 +150,37 @@ void UART2_IRQHandler(void)
     // apretó la tecla F2, que servirá para pasar al modo AT.
     uint8_t esF2 = 0;
 
-    uint8_t charESC = 0;
+    uint8_t esFn = 0;
 
     uint8_t* comandoAT = (uint8_t*)malloc(50);
     *comandoAT = 0;
     uint8_t index_AT = 0;
 
-    if(dato == 27)
-        charESC = 1;
-    if(charESC && (dato == 79 || dato == 81))
+    if(dato == 0x00)
+        esFn = 1;
+    if(esFn && dato == 0x3C)
     {
-        if(dato == 79 && esF2 == 0)
-            esF2 = 1;
-        if(dato == 81 && esF2 == 1)
-        {
-            esF2 = 0;
-            charESC = 0;
-            modoAT = !modoAT;
-            *buffer = 0x1B;
-            *(buffer + 1) = '[';
-            *(buffer + 2) = '2';
-            *(buffer + 3) = 'J';
-            *(buffer + 4) = 0x1B;
-            *(buffer + 5) = '[';
-            *(buffer + 6) = '0';
-            *(buffer + 7) = ';';
-            *(buffer + 8) = '0';
-            *(buffer + 9) = 'f';
-            *(buffer + 10) = 0;
+        esF2 = 0;
+        esFn = 0;
+        modoAT = !modoAT;
+        *buffer = 0x1B;
+        *(buffer + 1) = '[';
+        *(buffer + 2) = '2';
+        *(buffer + 3) = 'J';
+        *(buffer + 4) = 0x1B;
+        *(buffer + 5) = '[';
+        *(buffer + 6) = '0';
+        *(buffer + 7) = ';';
+        *(buffer + 8) = '0';
+        *(buffer + 9) = 'f';
+        *(buffer + 10) = 0;
 
-            if(modoAT)
-                strcat(buffer, "* Modo consola *\r\n");
-        }
+        if(modoAT)
+            strcat(buffer, "* Modo consola *\r\n");
     }
     else if(modoAT)
     {
-        if(charESC)
+        if(esFn)
         {
             int x = 0;
             x++;
@@ -198,7 +193,7 @@ void UART2_IRQHandler(void)
             *buffer = dato;
             *(comandoAT + index_AT++) = dato;
 
-            if(dato == 0x08)
+            if(dato == '\b')
             {
                 if(index_AT > 0)
                 {
