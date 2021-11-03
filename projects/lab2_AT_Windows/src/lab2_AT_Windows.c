@@ -151,9 +151,14 @@ void UART2_IRQHandler(void)
     {
         indexBuffPrueba = 0;
         USB_UART->TER2 = 1;
+        
+        while(!UARTDisponible(USB_UART));
         USB_UART->THR = 'Y';
+        while(!UARTDisponible(USB_UART));
         USB_UART->THR = 'E';
+        while(!UARTDisponible(USB_UART));
         USB_UART->THR = 'S';
+        
         USB_UART->TER2 = 0;
         memset(buffer_prueba, 0, 100);
     }
