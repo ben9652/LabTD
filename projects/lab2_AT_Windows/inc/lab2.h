@@ -70,6 +70,9 @@ static uint8_t contador;
 static uint8_t esF2 = 0;
 static uint8_t esFn = 0;
 
+static unsigned char* buffer_prueba;
+static size_t indexBuffPrueba = 0;
+
 /* === Declaraciones de variables externas ===================================================== */
 
 /* === Declaraciones de funciones externas ===================================================== */

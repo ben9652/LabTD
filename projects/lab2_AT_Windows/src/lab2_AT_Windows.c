@@ -141,10 +141,6 @@ void EnviarComandoAT(LPC_USART_T *pUART_MODEM, char* AT)
     UARTEscribirString(pUART_MODEM, AT);
 }
 
-unsigned char* buffer_prueba = (unsigned char*) malloc(100);
-memset(buffer_prueba, 0, 100);
-size_t indexBuffPrueba = 0;
-
 void UART2_IRQHandler(void)
 {
     uint8_t dato = USB_UART->RBR & UART_RBR_MASKBIT;
@@ -400,6 +396,9 @@ int main(void)
 
     comandoAT = (uint8_t*)malloc(50);
     *comandoAT = 0;
+
+    buffer_prueba = (unsigned char*) malloc(100);
+    memset(buffer_prueba, 0, 100);
     
     aux = buffer;
 
