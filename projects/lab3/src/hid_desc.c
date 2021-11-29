@@ -165,5 +165,70 @@ ALIGNED(4) uint8_t USB_FsConfigDescriptor[] = {
 
 //USB String Descriptor (optional)
 const uint8_t USB_StringDescriptor[] = {
-	// INSPIRARSE DEL DESCRIPTOR DE STRING DE MOUSE
+	/* Index 0x00: LANGID Codes */
+	0x04,							/* bLength */
+	USB_STRING_DESCRIPTOR_TYPE,		/* bDescriptorType */
+	WBVAL(0x0409),					/* wLANGID  0x0409 = US English*/
+	/* Index 0x01: Manufacturer */
+	(13 * 2 + 2),					/* bLength (13 Char + Type + length) */
+	USB_STRING_DESCRIPTOR_TYPE,		/* bDescriptorType */
+	'T', 0,
+	'D', 0,
+	' ', 0,
+	'2', 0,
+	'0', 0,
+	'2', 0,
+	'1', 0,
+	' ', 0,
+	'-', 0,
+	' ', 0,
+	'U', 0,
+	'N', 0,
+	'T', 0,
+	/* Index 0x02: Product */
+	(14 * 2 + 2),					/* bLength (16 Char + Type + length) */
+	USB_STRING_DESCRIPTOR_TYPE,		/* bDescriptorType */
+	'E', 0,
+	'D', 0,
+	'U', 0,
+	'C', 0,
+	'I', 0,
+	'A', 0,
+	'A', 0,
+	' ', 0,
+	'T', 0,
+	'E', 0,
+	'C', 0,
+	'L', 0,
+	'A', 0,
+	'S', 0,
+	/* Index 0x03: Serial Number */
+	(13 * 2 + 2),					/* bLength (13 Char + Type + length) */
+	USB_STRING_DESCRIPTOR_TYPE,		/* bDescriptorType */
+	'A', 0,
+	'B', 0,
+	'C', 0,
+	'D', 0,
+	'1', 0,
+	'2', 0,
+	'3', 0,
+	'4', 0,
+	'5', 0,
+	'6', 0,
+	'7', 0,
+	'8', 0,
+	'9', 0,
+	/* Index 0x04: Interface 0, Alternate Setting 0 */
+	(10 * 2 + 2),					/* bLength (12 Char + Type + length) */
+	USB_STRING_DESCRIPTOR_TYPE,		/* bDescriptorType */
+	'H', 0,
+	'I', 0,
+	'D', 0,
+	' ', 0,
+	'T', 0,
+	'E', 0,
+	'C', 0,
+	'L', 0,
+	'A', 0,
+	'S', 0,
 };
