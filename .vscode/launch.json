@@ -6,7 +6,7 @@
             "request": "launch",
             "servertype": "openocd",
             "cwd": "${workspaceRoot}",
-            "executable": "./projects/lab2_AT_Windows/out/lab2_AT_Windows.elf",
+            "executable": "./projects/lab3/out/lab3.elf",
             "name": "Debug (OpenOCD)",
             "configFiles": [
                 "${workspaceRoot}/scripts/openocd/lpc4337.cfg"
