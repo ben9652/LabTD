@@ -6,21 +6,21 @@ EXEC_P, HAS_SYMS, D_PAGED
 start address 0x1a000775
 
 Program Header:
-0x70000001 off    0x00011be8 vaddr 0x1a001be8 paddr 0x1a001be8 align 2**2
+0x70000001 off    0x00011c58 vaddr 0x1a001c58 paddr 0x1a001c58 align 2**2
          filesz 0x00000008 memsz 0x00000008 flags r--
     LOAD off    0x00010080 vaddr 0x10000080 paddr 0x10000080 align 2**16
          filesz 0x00000000 memsz 0x00000030 flags rw-
     LOAD off    0x00010000 vaddr 0x1a000000 paddr 0x1a000000 align 2**16
-         filesz 0x00001bf0 memsz 0x00001bf0 flags rwx
-    LOAD off    0x00020000 vaddr 0x10000000 paddr 0x1a001bf0 align 2**16
+         filesz 0x00001c60 memsz 0x00001c60 flags rwx
+    LOAD off    0x00020000 vaddr 0x10000000 paddr 0x1a001c60 align 2**16
          filesz 0x00000080 memsz 0x00000080 flags rw-
 private flags = 5000400: [Version5 EABI] [hard-float ABI]
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .text         00001be4  1a000000  1a000000  00010000  2**2
+  0 .text         00001c54  1a000000  1a000000  00010000  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .data         00000080  10000000  1a001bf0  00020000  2**2
+  1 .data         00000080  10000000  1a001c60  00020000  2**2
                   CONTENTS, ALLOC, LOAD, DATA
   2 .data_RAM2    00000000  10080000  10080000  00020080  2**2
                   CONTENTS
@@ -40,9 +40,9 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS
  10 .bss_RAM5     00000000  2000c000  2000c000  00020080  2**2
                   CONTENTS
- 11 .init_array   00000004  1a001be4  1a001be4  00011be4  2**2
+ 11 .init_array   00000004  1a001c54  1a001c54  00011c54  2**2
                   CONTENTS, ALLOC, LOAD, DATA
- 12 .ARM.exidx    00000008  1a001be8  1a001be8  00011be8  2**2
+ 12 .ARM.exidx    00000008  1a001c58  1a001c58  00011c58  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
  13 .uninit_RESERVED 00000000  10000000  10000000  00020080  2**2
                   CONTENTS
@@ -56,11 +56,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS
  18 .noinit       00000000  100000b0  100000b0  00020080  2**2
                   CONTENTS
- 19 .debug_info   0001666d  00000000  00000000  00020080  2**0
+ 19 .debug_info   00016666  00000000  00000000  00020080  2**0
                   CONTENTS, READONLY, DEBUGGING
- 20 .debug_abbrev 00002f5f  00000000  00000000  000366ed  2**0
+ 20 .debug_abbrev 00002f5f  00000000  00000000  000366e6  2**0
                   CONTENTS, READONLY, DEBUGGING
- 21 .debug_loc    00006bcc  00000000  00000000  0003964c  2**0
+ 21 .debug_loc    00006bcc  00000000  00000000  00039645  2**0
                   CONTENTS, READONLY, DEBUGGING
  22 .debug_aranges 00000890  00000000  00000000  00040218  2**3
                   CONTENTS, READONLY, DEBUGGING
@@ -70,11 +70,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  25 .debug_line   00007998  00000000  00000000  0004b058  2**0
                   CONTENTS, READONLY, DEBUGGING
- 26 .debug_str    00023ff7  00000000  00000000  000529f0  2**0
+ 26 .debug_str    00023ff6  00000000  00000000  000529f0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 27 .comment      00000031  00000000  00000000  000769e7  2**0
+ 27 .comment      00000031  00000000  00000000  000769e6  2**0
                   CONTENTS, READONLY
- 28 .ARM.attributes 00000037  00000000  00000000  00076a18  2**0
+ 28 .ARM.attributes 00000037  00000000  00000000  00076a17  2**0
                   CONTENTS, READONLY
  29 .debug_frame  0000136c  00000000  00000000  00076a50  2**2
                   CONTENTS, READONLY, DEBUGGING
@@ -90,8 +90,8 @@ SYMBOL TABLE:
 20000000 l    d  .bss_RAM3	00000000 .bss_RAM3
 20008000 l    d  .bss_RAM4	00000000 .bss_RAM4
 2000c000 l    d  .bss_RAM5	00000000 .bss_RAM5
-1a001be4 l    d  .init_array	00000000 .init_array
-1a001be8 l    d  .ARM.exidx	00000000 .ARM.exidx
+1a001c54 l    d  .init_array	00000000 .init_array
+1a001c58 l    d  .ARM.exidx	00000000 .ARM.exidx
 10000000 l    d  .uninit_RESERVED	00000000 .uninit_RESERVED
 10080000 l    d  .noinit_RAM2	00000000 .noinit_RAM2
 20000000 l    d  .noinit_RAM3	00000000 .noinit_RAM3
@@ -129,16 +129,16 @@ SYMBOL TABLE:
 1a0008c4 l     F .text	00000030 Board_ADC_Init
 1a0008f4 l     F .text	00000038 Board_SPI_Init
 1a00092c l     F .text	00000024 Board_I2C_Init
-1a001a5c l     O .text	00000008 GpioButtons
-1a001a64 l     O .text	0000000c GpioLeds
-1a001a70 l     O .text	00000012 GpioPorts
+1a001acc l     O .text	00000008 GpioButtons
+1a001ad4 l     O .text	0000000c GpioLeds
+1a001ae0 l     O .text	00000012 GpioPorts
 00000000 l    df *ABS*	00000000 board_sysinit.c
-1a001a88 l     O .text	00000004 InitClkStates
-1a001a8c l     O .text	00000074 pinmuxing
+1a001af8 l     O .text	00000004 InitClkStates
+1a001afc l     O .text	00000074 pinmuxing
 00000000 l    df *ABS*	00000000 uart_18xx_43xx.c
 1a000a7c l     F .text	0000002c Chip_UART_GetIndex
-1a001b00 l     O .text	00000008 UART_BClock
-1a001b08 l     O .text	00000008 UART_PClock
+1a001b70 l     O .text	00000008 UART_BClock
+1a001b78 l     O .text	00000008 UART_PClock
 00000000 l    df *ABS*	00000000 adc_18xx_43xx.c
 1a000be4 l     F .text	00000014 Chip_ADC_GetClockIndex
 1a000bf8 l     F .text	00000032 getClkDiv
@@ -148,12 +148,12 @@ SYMBOL TABLE:
 1a000e58 l     F .text	0000004c Chip_Clock_FindBaseClock
 1a0010cc l     F .text	00000022 Chip_Clock_GetDivRate
 100000a0 l     O .bss	00000008 audio_usb_pll_freq
-1a001b1c l     O .text	0000006c periph_to_base
+1a001b8c l     O .text	0000006c periph_to_base
 00000000 l    df *ABS*	00000000 chip_18xx_43xx.c
 1a0012b4 l     F .text	00000034 Chip_USB_PllSetup
-1a001b88 l     O .text	00000014 usbPLLSetup
+1a001bf8 l     O .text	00000014 usbPLLSetup
 00000000 l    df *ABS*	00000000 sysinit_18xx_43xx.c
-1a001b9c l     O .text	00000048 InitClkStates
+1a001c0c l     O .text	00000048 InitClkStates
 00000000 l    df *ABS*	00000000 gpio_18xx_43xx.c
 00000000 l    df *ABS*	00000000 ssp_18xx_43xx.c
 1a001488 l     F .text	00000014 Chip_SSP_GetClockIndex
@@ -169,10 +169,10 @@ SYMBOL TABLE:
 00000000 l    df *ABS*	00000000 hid_desc.c
 00000000 l    df *ABS*	00000000 system.c
 00000000 l    df *ABS*	00000000 
-1a001be8 l       .init_array	00000000 __init_array_end
-1a001be4 l       .bss_RAM5	00000000 __preinit_array_end
-1a001be4 l       .init_array	00000000 __init_array_start
-1a001be4 l       .bss_RAM5	00000000 __preinit_array_start
+1a001c58 l       .init_array	00000000 __init_array_end
+1a001c54 l       .bss_RAM5	00000000 __preinit_array_end
+1a001c54 l       .init_array	00000000 __init_array_start
+1a001c54 l       .bss_RAM5	00000000 __preinit_array_start
 1a000ef0 g     F .text	0000001c Chip_Clock_GetDividerSource
 1a0001ba  w    F .text	00000002 TIMER2_IRQHandler
 1a000184  w    F .text	00000002 DebugMon_Handler
@@ -193,7 +193,7 @@ SYMBOL TABLE:
 1a0001ba  w    F .text	00000002 ATIMER_IRQHandler
 1a000186  w    F .text	00000002 PendSV_Handler
 1a000178  w    F .text	00000002 NMI_Handler
-1a001bf0 g       .ARM.exidx	00000000 __exidx_end
+1a001c60 g       .ARM.exidx	00000000 __exidx_end
 1a000150 g       .text	00000000 __data_section_table_end
 1a0001ba  w    F .text	00000002 I2C1_IRQHandler
 1a0001ba  w    F .text	00000002 UART1_IRQHandler
@@ -201,11 +201,11 @@ SYMBOL TABLE:
 1a0001ba  w    F .text	00000002 CAN1_IRQHandler
 1a001290 g     F .text	00000014 Chip_Clock_EnablePLL
 53ff711a g       *ABS*	00000000 __valid_user_code_checksum
-1a001bf0 g       .ARM.exidx	00000000 _etext
+1a001c60 g       .ARM.exidx	00000000 _etext
 1a0001ba  w    F .text	00000002 USB1_IRQHandler
 1a000520 g     F .text	000000f8 Buttons_Init
 1a0001ba  w    F .text	00000002 I2S0_IRQHandler
-1a001a58 g     O .text	00000000 USB_StringDescriptor
+1a001a58 g     O .text	00000070 USB_StringDescriptor
 1a0001ba  w    F .text	00000002 TIMER3_IRQHandler
 1a001188 g     F .text	0000000c Chip_Clock_GetBaseClocktHz
 1a0001ba  w    F .text	00000002 UART0_IRQHandler
@@ -224,12 +224,12 @@ SYMBOL TABLE:
 1a000a04 g     F .text	0000006c Board_SetupClocking
 20008000 g       *ABS*	00000000 __top_RamAHB32
 1a001628 g     F .text	000002dc .hidden __udivmoddi4
-1a001a58 g     O .text	00000004 ExtRateIn
+1a001ac8 g     O .text	00000004 ExtRateIn
 1a0001ba  w    F .text	00000002 IntDefaultHandler
 1a000300 g       .text	00000000 __CRP_WORD_END__
 1a000634 g     F .text	0000001c GPIO1_IRQHandler
 1a0001ba  w    F .text	00000002 SSP0_IRQHandler
-1a001be8 g       .ARM.exidx	00000000 __exidx_start
+1a001c58 g       .ARM.exidx	00000000 __exidx_start
 1a0002fc g     O .text	00000004 CRP_WORD
 1a001908 g     F .text	00000050 __libc_init_array
 1a0001ba  w    F .text	00000002 ADC1_IRQHandler
@@ -264,7 +264,7 @@ SYMBOL TABLE:
 1a0014c6 g     F .text	0000003e Chip_SSP_SetBitRate
 1a001484 g     F .text	00000002 Chip_GPIO_Init
 1a000688 g     F .text	000000a8 Keyboard_init
-1a001a84 g     O .text	00000004 OscRateIn
+1a001af4 g     O .text	00000004 OscRateIn
 100000b0 g       .noinit	00000000 _end_noinit
 10008000 g       *ABS*	00000000 _vStackTop
 1a0001ba  w    F .text	00000002 SSP1_IRQHandler
@@ -362,19 +362,19 @@ Disassembly of section .text:
 1a000110:	bb 01 00 1a                                         ....
 
 1a000114 <__data_section_table>:
-1a000114:	1a001bf0 	.word	0x1a001bf0
+1a000114:	1a001c60 	.word	0x1a001c60
 1a000118:	10000000 	.word	0x10000000
 1a00011c:	00000080 	.word	0x00000080
-1a000120:	1a001bf0 	.word	0x1a001bf0
+1a000120:	1a001c60 	.word	0x1a001c60
 1a000124:	10080000 	.word	0x10080000
 1a000128:	00000000 	.word	0x00000000
-1a00012c:	1a001bf0 	.word	0x1a001bf0
+1a00012c:	1a001c60 	.word	0x1a001c60
 1a000130:	20000000 	.word	0x20000000
 1a000134:	00000000 	.word	0x00000000
-1a000138:	1a001bf0 	.word	0x1a001bf0
+1a000138:	1a001c60 	.word	0x1a001c60
 1a00013c:	20008000 	.word	0x20008000
 1a000140:	00000000 	.word	0x00000000
-1a000144:	1a001bf0 	.word	0x1a001bf0
+1a000144:	1a001c60 	.word	0x1a001c60
 1a000148:	2000c000 	.word	0x2000c000
 1a00014c:	00000000 	.word	0x00000000
 
@@ -1457,7 +1457,7 @@ static void Board_LED_Init()
 1a000836:	bc70      	pop	{r4, r5, r6}
 1a000838:	4770      	bx	lr
 1a00083a:	4770      	bx	lr
-1a00083c:	1a001a64 	.word	0x1a001a64
+1a00083c:	1a001ad4 	.word	0x1a001ad4
 1a000840:	400f4000 	.word	0x400f4000
 
 1a000844 <Board_TEC_Init>:
@@ -1495,7 +1495,7 @@ static void Board_TEC_Init()
 1a000876:	4770      	bx	lr
 1a000878:	4770      	bx	lr
 1a00087a:	bf00      	nop
-1a00087c:	1a001a5c 	.word	0x1a001a5c
+1a00087c:	1a001acc 	.word	0x1a001acc
 1a000880:	400f4000 	.word	0x400f4000
 
 1a000884 <Board_GPIO_Init>:
@@ -1532,7 +1532,7 @@ static void Board_GPIO_Init()
 1a0008b6:	4770      	bx	lr
 1a0008b8:	4770      	bx	lr
 1a0008ba:	bf00      	nop
-1a0008bc:	1a001a70 	.word	0x1a001a70
+1a0008bc:	1a001ae0 	.word	0x1a001ae0
 1a0008c0:	400f4000 	.word	0x400f4000
 
 1a0008c4 <Board_ADC_Init>:
@@ -1678,7 +1678,7 @@ void Board_LED_Set(uint8_t LEDNumber, bool On)
 1a00098e:	5499      	strb	r1, [r3, r2]
 1a000990:	4770      	bx	lr
 1a000992:	bf00      	nop
-1a000994:	1a001a64 	.word	0x1a001a64
+1a000994:	1a001ad4 	.word	0x1a001ad4
 
 1a000998 <Board_Init>:
     Board_LED_Set(LEDNumber, !Board_LED_Test(LEDNumber));
@@ -1760,7 +1760,7 @@ void Board_SetupMuxing(void)
 1a0009f6:	4770      	bx	lr
 1a0009f8:	4770      	bx	lr
 1a0009fa:	bf00      	nop
-1a0009fc:	1a001a8c 	.word	0x1a001a8c
+1a0009fc:	1a001afc 	.word	0x1a001afc
 1a000a00:	40086000 	.word	0x40086000
 
 1a000a04 <Board_SetupClocking>:
@@ -1827,7 +1827,7 @@ STATIC INLINE void Chip_CREG_SetFlashAcceleration(uint32_t Hz)
 1a000a62:	bf00      	nop
 1a000a64:	40043000 	.word	0x40043000
 1a000a68:	0c28cb00 	.word	0x0c28cb00
-1a000a6c:	1a001a88 	.word	0x1a001a88
+1a000a6c:	1a001af8 	.word	0x1a001af8
 
 1a000a70 <Board_SystemInit>:
 }
@@ -1965,7 +1965,7 @@ void Chip_UART_Init(LPC_USART_T *pUART)
 1a000aee:	69a3      	ldr	r3, [r4, #24]
 1a000af0:	9301      	str	r3, [sp, #4]
 1a000af2:	e7f3      	b.n	1a000adc <Chip_UART_Init+0x34>
-1a000af4:	1a001b08 	.word	0x1a001b08
+1a000af4:	1a001b78 	.word	0x1a001b78
 1a000af8:	40082000 	.word	0x40082000
 
 1a000afc <Chip_UART_SetBaudFDR>:
@@ -2132,7 +2132,7 @@ STATIC INLINE void Chip_UART_SetDivisorLatches(LPC_USART_T *pUART, uint8_t dll, 
 1a000bd8:	b003      	add	sp, #12
 1a000bda:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
 1a000bde:	bf00      	nop
-1a000be0:	1a001b00 	.word	0x1a001b00
+1a000be0:	1a001b70 	.word	0x1a001b70
 
 1a000be4 <Chip_ADC_GetClockIndex>:
 /* Returns clock index for the peripheral block */
@@ -2659,7 +2659,7 @@ static CHIP_CGU_BASE_CLK_T Chip_Clock_FindBaseClock(CHIP_CCU_CLK_T clk)
 1a000e9a:	bc30      	pop	{r4, r5}
 1a000e9c:	4770      	bx	lr
 1a000e9e:	bf00      	nop
-1a000ea0:	1a001b1c 	.word	0x1a001b1c
+1a000ea0:	1a001b8c 	.word	0x1a001b8c
 
 1a000ea4 <Chip_Clock_EnableCrystal>:
  * Public functions
@@ -2718,7 +2718,7 @@ void Chip_Clock_EnableCrystal(void)
 1a000ee0:	4770      	bx	lr
 1a000ee2:	bf00      	nop
 1a000ee4:	40050000 	.word	0x40050000
-1a000ee8:	1a001a84 	.word	0x1a001a84
+1a000ee8:	1a001af4 	.word	0x1a001af4
 1a000eec:	01312cff 	.word	0x01312cff
 
 1a000ef0 <Chip_Clock_GetDividerSource>:
@@ -2762,7 +2762,7 @@ uint32_t Chip_Clock_GetDividerDivisor(CHIP_CGU_IDIV_T Divider)
 1a000f1a:	ea00 0092 	and.w	r0, r0, r2, lsr #2
 1a000f1e:	4770      	bx	lr
 1a000f20:	40050000 	.word	0x40050000
-1a000f24:	1a001b14 	.word	0x1a001b14
+1a000f24:	1a001b84 	.word	0x1a001b84
 
 1a000f28 <Chip_Clock_GetClockInputHz>:
 
@@ -2910,8 +2910,8 @@ uint32_t Chip_Clock_GetClockInputHz(CHIP_CGU_CLKIN_T input)
 1a000fc4:	00b71b00 	.word	0x00b71b00
 1a000fc8:	40043000 	.word	0x40043000
 1a000fcc:	017d7840 	.word	0x017d7840
-1a000fd0:	1a001a58 	.word	0x1a001a58
-1a000fd4:	1a001a84 	.word	0x1a001a84
+1a000fd0:	1a001ac8 	.word	0x1a001ac8
+1a000fd4:	1a001af4 	.word	0x1a001af4
 1a000fd8:	100000a0 	.word	0x100000a0
 1a000fdc:	02faf080 	.word	0x02faf080
 
@@ -3044,7 +3044,7 @@ uint32_t Chip_Clock_GetClockInputHz(CHIP_CGU_CLKIN_T input)
 1a0010c0:	b003      	add	sp, #12
 1a0010c2:	bd30      	pop	{r4, r5, pc}
 1a0010c4:	40050000 	.word	0x40050000
-1a0010c8:	1a001b10 	.word	0x1a001b10
+1a0010c8:	1a001b80 	.word	0x1a001b80
 
 1a0010cc <Chip_Clock_GetDivRate>:
 {
@@ -3454,7 +3454,7 @@ static void Chip_USB_PllSetup(void)
 1a0012dc:	d0f9      	beq.n	1a0012d2 <Chip_USB_PllSetup+0x1e>
 1a0012de:	bd08      	pop	{r3, pc}
 1a0012e0:	1c9c3800 	.word	0x1c9c3800
-1a0012e4:	1a001b88 	.word	0x1a001b88
+1a0012e4:	1a001bf8 	.word	0x1a001bf8
 
 1a0012e8 <Chip_USB0_Init>:
 /*****************************************************************************
@@ -3738,7 +3738,7 @@ __STATIC_INLINE int Chip_Clock_MainPLLLocked(void)
 1a001476:	bf00      	nop
 1a001478:	40050000 	.word	0x40050000
 1a00147c:	068e7780 	.word	0x068e7780
-1a001480:	1a001b9c 	.word	0x1a001b9c
+1a001480:	1a001c0c 	.word	0x1a001c0c
 
 1a001484 <Chip_GPIO_Init>:
  * Public functions
@@ -4365,10 +4365,10 @@ __STATIC_INLINE uint32_t SCB_GetFPUType(void)
 1a001942:	bd70      	pop	{r4, r5, r6, pc}
 1a001944:	bd70      	pop	{r4, r5, r6, pc}
 1a001946:	bf00      	nop
-1a001948:	1a001be4 	.word	0x1a001be4
-1a00194c:	1a001be4 	.word	0x1a001be4
-1a001950:	1a001be8 	.word	0x1a001be8
-1a001954:	1a001be4 	.word	0x1a001be4
+1a001948:	1a001c54 	.word	0x1a001c54
+1a00194c:	1a001c54 	.word	0x1a001c54
+1a001950:	1a001c58 	.word	0x1a001c58
+1a001954:	1a001c54 	.word	0x1a001c54
 
 1a001958 <memset>:
 1a001958:	b470      	push	{r4, r5, r6}
@@ -4449,58 +4449,67 @@ __STATIC_INLINE uint32_t SCB_GetFPUType(void)
 1a001a4c <USB_DeviceQualifier>:
 1a001a4c:	060a 0200 0000 4000 0001 ffff               .......@....
 
-1a001a58 <ExtRateIn>:
-1a001a58:	0000 0000                                   ....
+1a001a58 <USB_StringDescriptor>:
+1a001a58:	0304 0409 031c 0054 0044 0020 0032 0030     ......T.D. .2.0.
+1a001a68:	0032 0031 0020 002d 0020 0055 004e 0054     2.1. .-. .U.N.T.
+1a001a78:	031e 0045 0044 0055 0043 0049 0041 0041     ..E.D.U.C.I.A.A.
+1a001a88:	0020 0054 0045 0043 004c 0041 0053 031c      .T.E.C.L.A.S...
+1a001a98:	0041 0042 0043 0044 0031 0032 0033 0034     A.B.C.D.1.2.3.4.
+1a001aa8:	0035 0036 0037 0038 0039 0316 0048 0049     5.6.7.8.9...H.I.
+1a001ab8:	0044 0020 0054 0045 0043 004c 0041 0053     D. .T.E.C.L.A.S.
 
-1a001a5c <GpioButtons>:
-1a001a5c:	0400 0800 0900 0901                         ........
+1a001ac8 <ExtRateIn>:
+1a001ac8:	0000 0000                                   ....
 
-1a001a64 <GpioLeds>:
-1a001a64:	0005 0105 0205 0e00 0b01 0c01               ............
+1a001acc <GpioButtons>:
+1a001acc:	0400 0800 0900 0901                         ........
 
-1a001a70 <GpioPorts>:
-1a001a70:	0003 0303 0403 0f05 1005 0503 0603 0703     ................
-1a001a80:	0802 ffff                                   ....
+1a001ad4 <GpioLeds>:
+1a001ad4:	0005 0105 0205 0e00 0b01 0c01               ............
 
-1a001a84 <OscRateIn>:
-1a001a84:	1b00 00b7                                   ....
+1a001ae0 <GpioPorts>:
+1a001ae0:	0003 0303 0403 0f05 1005 0503 0603 0703     ................
+1a001af0:	0802 ffff                                   ....
 
-1a001a88 <InitClkStates>:
-1a001a88:	0f01 0101                                   ....
+1a001af4 <OscRateIn>:
+1a001af4:	1b00 00b7                                   ....
 
-1a001a8c <pinmuxing>:
-1a001a8c:	0002 0044 0102 0044 0202 0044 0a02 0040     ..D...D...D...@.
-1a001a9c:	0b02 0040 0c02 0040 0001 0050 0101 0050     ..@...@...P...P.
-1a001aac:	0201 0050 0601 0050 0106 0050 0406 0050     ..P...P...P...P.
-1a001abc:	0506 0050 0706 0054 0806 0054 0906 0050     ..P...T...T...P.
-1a001acc:	0a06 0050 0b06 0050 0c06 0050 040f 00f0     ..P...P...P.....
-1a001adc:	0301 00d5 0401 00d5 0107 0016 0207 0056     ..............V.
-1a001aec:	0302 0052 0402 0052 0509 0052 0609 0057     ..R...R...R...W.
-1a001afc:	0206 0057                                   ..W.
+1a001af8 <InitClkStates>:
+1a001af8:	0f01 0101                                   ....
 
-1a001b00 <UART_BClock>:
-1a001b00:	01c2 01a2 0182 0162                         ......b.
+1a001afc <pinmuxing>:
+1a001afc:	0002 0044 0102 0044 0202 0044 0a02 0040     ..D...D...D...@.
+1a001b0c:	0b02 0040 0c02 0040 0001 0050 0101 0050     ..@...@...P...P.
+1a001b1c:	0201 0050 0601 0050 0106 0050 0406 0050     ..P...P...P...P.
+1a001b2c:	0506 0050 0706 0054 0806 0054 0906 0050     ..P...T...T...P.
+1a001b3c:	0a06 0050 0b06 0050 0c06 0050 040f 00f0     ..P...P...P.....
+1a001b4c:	0301 00d5 0401 00d5 0107 0016 0207 0056     ..............V.
+1a001b5c:	0302 0052 0402 0052 0509 0052 0609 0057     ..R...R...R...W.
+1a001b6c:	0206 0057                                   ..W.
 
-1a001b08 <UART_PClock>:
-1a001b08:	0081 0082 00a1 00a2 0201 0804 0f03 0f0f     ................
-1a001b18:	00ff 0000                                   ....
+1a001b70 <UART_BClock>:
+1a001b70:	01c2 01a2 0182 0162                         ......b.
 
-1a001b1c <periph_to_base>:
-1a001b1c:	0000 0005 000a 0020 0024 0009 0040 0040     ...... .$...@.@.
-1a001b2c:	0005 0060 00a6 0004 00c0 00c3 0002 00e0     ..`.............
-1a001b3c:	00e0 0001 0100 0100 0003 0120 0120 0006     .......... . ...
-1a001b4c:	0140 0140 000c 0142 0142 0019 0162 0162     @.@...B.B...b.b.
-1a001b5c:	0013 0182 0182 0012 01a2 01a2 0011 01c2     ................
-1a001b6c:	01c2 0010 01e2 01e2 000f 0202 0202 000e     ................
-1a001b7c:	0222 0222 000d 0223 0223 001c               "."...#.#...
+1a001b78 <UART_PClock>:
+1a001b78:	0081 0082 00a1 00a2 0201 0804 0f03 0f0f     ................
+1a001b88:	00ff 0000                                   ....
 
-1a001b88 <usbPLLSetup>:
-1a001b88:	601d 0000 7ffa 0616 0000 0000 0000 0000     .`..............
-1a001b98:	3800 1c9c                                   .8..
+1a001b8c <periph_to_base>:
+1a001b8c:	0000 0005 000a 0020 0024 0009 0040 0040     ...... .$...@.@.
+1a001b9c:	0005 0060 00a6 0004 00c0 00c3 0002 00e0     ..`.............
+1a001bac:	00e0 0001 0100 0100 0003 0120 0120 0006     .......... . ...
+1a001bbc:	0140 0140 000c 0142 0142 0019 0162 0162     @.@...B.B...b.b.
+1a001bcc:	0013 0182 0182 0012 01a2 01a2 0011 01c2     ................
+1a001bdc:	01c2 0010 01e2 01e2 000f 0202 0202 000e     ................
+1a001bec:	0222 0222 000d 0223 0223 001c               "."...#.#...
 
-1a001b9c <InitClkStates>:
-1a001b9c:	0100 0001 0909 0001 090a 0001 0701 0101     ................
-1a001bac:	0902 0001 0906 0001 090c 0101 090d 0001     ................
-1a001bbc:	090e 0001 090f 0001 0910 0001 0911 0001     ................
-1a001bcc:	0912 0001 0913 0001 1114 0001 1119 0001     ................
-1a001bdc:	111a 0001 111b 0001                         ........
+1a001bf8 <usbPLLSetup>:
+1a001bf8:	601d 0000 7ffa 0616 0000 0000 0000 0000     .`..............
+1a001c08:	3800 1c9c                                   .8..
+
+1a001c0c <InitClkStates>:
+1a001c0c:	0100 0001 0909 0001 090a 0001 0701 0101     ................
+1a001c1c:	0902 0001 0906 0001 090c 0101 090d 0001     ................
+1a001c2c:	090e 0001 090f 0001 0910 0001 0911 0001     ................
+1a001c3c:	0912 0001 0913 0001 1114 0001 1119 0001     ................
+1a001c4c:	111a 0001 111b 0001                         ........

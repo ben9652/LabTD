@@ -12,14 +12,14 @@ projects/lab3/out/lab3.elf:1a000884 00000040 t Board_GPIO_Init
 projects/lab3/out/lab3.elf:1a0008c4 00000030 t Board_ADC_Init
 projects/lab3/out/lab3.elf:1a0008f4 00000038 t Board_SPI_Init
 projects/lab3/out/lab3.elf:1a00092c 00000024 t Board_I2C_Init
-projects/lab3/out/lab3.elf:1a001a5c 00000008 t GpioButtons
-projects/lab3/out/lab3.elf:1a001a64 0000000c t GpioLeds
-projects/lab3/out/lab3.elf:1a001a70 00000012 t GpioPorts
-projects/lab3/out/lab3.elf:1a001a88 00000004 t InitClkStates
-projects/lab3/out/lab3.elf:1a001a8c 00000074 t pinmuxing
+projects/lab3/out/lab3.elf:1a001acc 00000008 t GpioButtons
+projects/lab3/out/lab3.elf:1a001ad4 0000000c t GpioLeds
+projects/lab3/out/lab3.elf:1a001ae0 00000012 t GpioPorts
+projects/lab3/out/lab3.elf:1a001af8 00000004 t InitClkStates
+projects/lab3/out/lab3.elf:1a001afc 00000074 t pinmuxing
 projects/lab3/out/lab3.elf:1a000a7c 0000002c t Chip_UART_GetIndex
-projects/lab3/out/lab3.elf:1a001b00 00000008 t UART_BClock
-projects/lab3/out/lab3.elf:1a001b08 00000008 t UART_PClock
+projects/lab3/out/lab3.elf:1a001b70 00000008 t UART_BClock
+projects/lab3/out/lab3.elf:1a001b78 00000008 t UART_PClock
 projects/lab3/out/lab3.elf:1a000be4 00000014 t Chip_ADC_GetClockIndex
 projects/lab3/out/lab3.elf:1a000bf8 00000032 t getClkDiv
 projects/lab3/out/lab3.elf:1a000cac 000000a0 t pll_calc_divs
@@ -27,17 +27,17 @@ projects/lab3/out/lab3.elf:1a000d4c 0000010c t pll_get_frac
 projects/lab3/out/lab3.elf:1a000e58 0000004c t Chip_Clock_FindBaseClock
 projects/lab3/out/lab3.elf:1a0010cc 00000022 t Chip_Clock_GetDivRate
 projects/lab3/out/lab3.elf:100000a0 00000008 b audio_usb_pll_freq
-projects/lab3/out/lab3.elf:1a001b1c 0000006c t periph_to_base
+projects/lab3/out/lab3.elf:1a001b8c 0000006c t periph_to_base
 projects/lab3/out/lab3.elf:1a0012b4 00000034 t Chip_USB_PllSetup
-projects/lab3/out/lab3.elf:1a001b88 00000014 t usbPLLSetup
-projects/lab3/out/lab3.elf:1a001b9c 00000048 t InitClkStates
+projects/lab3/out/lab3.elf:1a001bf8 00000014 t usbPLLSetup
+projects/lab3/out/lab3.elf:1a001c0c 00000048 t InitClkStates
 projects/lab3/out/lab3.elf:1a001488 00000014 t Chip_SSP_GetClockIndex
 projects/lab3/out/lab3.elf:1a00149c 00000018 t Chip_SSP_GetPeriphClockIndex
 projects/lab3/out/lab3.elf:10000048 00000038 d i2c
-projects/lab3/out/lab3.elf:1a001be8 t __init_array_end
-projects/lab3/out/lab3.elf:1a001be4 b __preinit_array_end
-projects/lab3/out/lab3.elf:1a001be4 t __init_array_start
-projects/lab3/out/lab3.elf:1a001be4 b __preinit_array_start
+projects/lab3/out/lab3.elf:1a001c58 t __init_array_end
+projects/lab3/out/lab3.elf:1a001c54 b __preinit_array_end
+projects/lab3/out/lab3.elf:1a001c54 t __init_array_start
+projects/lab3/out/lab3.elf:1a001c54 b __preinit_array_start
 projects/lab3/out/lab3.elf:1a000ef0 0000001c T Chip_Clock_GetDividerSource
 projects/lab3/out/lab3.elf:1a0001ba 00000002 W TIMER2_IRQHandler
 projects/lab3/out/lab3.elf:1a000184 00000002 W DebugMon_Handler
@@ -58,7 +58,7 @@ projects/lab3/out/lab3.elf:1a0001ba 00000002 W SDIO_IRQHandler
 projects/lab3/out/lab3.elf:1a0001ba 00000002 W ATIMER_IRQHandler
 projects/lab3/out/lab3.elf:1a000186 00000002 W PendSV_Handler
 projects/lab3/out/lab3.elf:1a000178 00000002 W NMI_Handler
-projects/lab3/out/lab3.elf:1a001bf0 R __exidx_end
+projects/lab3/out/lab3.elf:1a001c60 R __exidx_end
 projects/lab3/out/lab3.elf:1a000150 T __data_section_table_end
 projects/lab3/out/lab3.elf:1a0001ba 00000002 W I2C1_IRQHandler
 projects/lab3/out/lab3.elf:1a0001ba 00000002 W UART1_IRQHandler
@@ -66,11 +66,11 @@ projects/lab3/out/lab3.elf:1a0001ba 00000002 W GPIO5_IRQHandler
 projects/lab3/out/lab3.elf:1a0001ba 00000002 W CAN1_IRQHandler
 projects/lab3/out/lab3.elf:1a001290 00000014 T Chip_Clock_EnablePLL
 projects/lab3/out/lab3.elf:53ff711a A __valid_user_code_checksum
-projects/lab3/out/lab3.elf:1a001bf0 R _etext
+projects/lab3/out/lab3.elf:1a001c60 R _etext
 projects/lab3/out/lab3.elf:1a0001ba 00000002 W USB1_IRQHandler
 projects/lab3/out/lab3.elf:1a000520 000000f8 T Buttons_Init
 projects/lab3/out/lab3.elf:1a0001ba 00000002 W I2S0_IRQHandler
-projects/lab3/out/lab3.elf:1a001a58 T USB_StringDescriptor
+projects/lab3/out/lab3.elf:1a001a58 00000070 T USB_StringDescriptor
 projects/lab3/out/lab3.elf:1a0001ba 00000002 W TIMER3_IRQHandler
 projects/lab3/out/lab3.elf:1a001188 0000000c T Chip_Clock_GetBaseClocktHz
 projects/lab3/out/lab3.elf:1a0001ba 00000002 W UART0_IRQHandler
@@ -89,12 +89,12 @@ projects/lab3/out/lab3.elf:1a001a38 00000012 T USB_DeviceDescriptor
 projects/lab3/out/lab3.elf:1a000a04 0000006c T Board_SetupClocking
 projects/lab3/out/lab3.elf:20008000 A __top_RamAHB32
 projects/lab3/out/lab3.elf:1a001628 000002dc T __udivmoddi4
-projects/lab3/out/lab3.elf:1a001a58 00000004 T ExtRateIn
+projects/lab3/out/lab3.elf:1a001ac8 00000004 T ExtRateIn
 projects/lab3/out/lab3.elf:1a0001ba 00000002 W IntDefaultHandler
 projects/lab3/out/lab3.elf:1a000300 T __CRP_WORD_END__
 projects/lab3/out/lab3.elf:1a000634 0000001c T GPIO1_IRQHandler
 projects/lab3/out/lab3.elf:1a0001ba 00000002 W SSP0_IRQHandler
-projects/lab3/out/lab3.elf:1a001be8 R __exidx_start
+projects/lab3/out/lab3.elf:1a001c58 R __exidx_start
 projects/lab3/out/lab3.elf:1a0002fc 00000004 T CRP_WORD
 projects/lab3/out/lab3.elf:1a001908 00000050 T __libc_init_array
 projects/lab3/out/lab3.elf:1a0001ba 00000002 W ADC1_IRQHandler
@@ -129,7 +129,7 @@ projects/lab3/out/lab3.elf:1a0001ba 00000002 W I2S1_IRQHandler
 projects/lab3/out/lab3.elf:1a0014c6 0000003e T Chip_SSP_SetBitRate
 projects/lab3/out/lab3.elf:1a001484 00000002 T Chip_GPIO_Init
 projects/lab3/out/lab3.elf:1a000688 000000a8 T Keyboard_init
-projects/lab3/out/lab3.elf:1a001a84 00000004 T OscRateIn
+projects/lab3/out/lab3.elf:1a001af4 00000004 T OscRateIn
 projects/lab3/out/lab3.elf:100000b0 ? _end_noinit
 projects/lab3/out/lab3.elf:10008000 A _vStackTop
 projects/lab3/out/lab3.elf:1a0001ba 00000002 W SSP1_IRQHandler
