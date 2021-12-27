@@ -1630,50 +1630,50 @@ void UART2_IRQHandler(void)
 1a0008c2:	54d1      	strb	r1, [r2, r3]
 1a0008c4:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
         indexBuffPrueba = 0;
-1a0008c6:	2300      	movs	r3, #0
-1a0008c8:	4a75      	ldr	r2, [pc, #468]	; (1a000aa0 <UART2_IRQHandler+0x238>)
-1a0008ca:	6013      	str	r3, [r2, #0]
-        USB_UART->THR = 0;
-1a0008cc:	4a72      	ldr	r2, [pc, #456]	; (1a000a98 <UART2_IRQHandler+0x230>)
-1a0008ce:	6013      	str	r3, [r2, #0]
-        while(!UARTDisponible(USB_UART));
-1a0008d0:	4871      	ldr	r0, [pc, #452]	; (1a000a98 <UART2_IRQHandler+0x230>)
-1a0008d2:	f7ff ff6d 	bl	1a0007b0 <UARTDisponible>
-1a0008d6:	2800      	cmp	r0, #0
-1a0008d8:	d0fa      	beq.n	1a0008d0 <UART2_IRQHandler+0x68>
+1a0008c6:	2200      	movs	r2, #0
+1a0008c8:	4b75      	ldr	r3, [pc, #468]	; (1a000aa0 <UART2_IRQHandler+0x238>)
+1a0008ca:	601a      	str	r2, [r3, #0]
         USB_UART->TER2 = 1;
-1a0008da:	2201      	movs	r2, #1
-1a0008dc:	4b6e      	ldr	r3, [pc, #440]	; (1a000a98 <UART2_IRQHandler+0x230>)
-1a0008de:	65da      	str	r2, [r3, #92]	; 0x5c
+1a0008cc:	2201      	movs	r2, #1
+1a0008ce:	4b72      	ldr	r3, [pc, #456]	; (1a000a98 <UART2_IRQHandler+0x230>)
+1a0008d0:	65da      	str	r2, [r3, #92]	; 0x5c
         while(!UARTDisponible(USB_UART));
-1a0008e0:	486d      	ldr	r0, [pc, #436]	; (1a000a98 <UART2_IRQHandler+0x230>)
-1a0008e2:	f7ff ff65 	bl	1a0007b0 <UARTDisponible>
-1a0008e6:	2800      	cmp	r0, #0
-1a0008e8:	d0fa      	beq.n	1a0008e0 <UART2_IRQHandler+0x78>
+1a0008d2:	4871      	ldr	r0, [pc, #452]	; (1a000a98 <UART2_IRQHandler+0x230>)
+1a0008d4:	f7ff ff6c 	bl	1a0007b0 <UARTDisponible>
+1a0008d8:	2800      	cmp	r0, #0
+1a0008da:	d0fa      	beq.n	1a0008d2 <UART2_IRQHandler+0x6a>
         USB_UART->THR = 'Y';
-1a0008ea:	2259      	movs	r2, #89	; 0x59
-1a0008ec:	4b6a      	ldr	r3, [pc, #424]	; (1a000a98 <UART2_IRQHandler+0x230>)
-1a0008ee:	601a      	str	r2, [r3, #0]
+1a0008dc:	2259      	movs	r2, #89	; 0x59
+1a0008de:	4b6e      	ldr	r3, [pc, #440]	; (1a000a98 <UART2_IRQHandler+0x230>)
+1a0008e0:	601a      	str	r2, [r3, #0]
         while(!UARTDisponible(USB_UART));
-1a0008f0:	4869      	ldr	r0, [pc, #420]	; (1a000a98 <UART2_IRQHandler+0x230>)
-1a0008f2:	f7ff ff5d 	bl	1a0007b0 <UARTDisponible>
-1a0008f6:	2800      	cmp	r0, #0
-1a0008f8:	d0fa      	beq.n	1a0008f0 <UART2_IRQHandler+0x88>
+1a0008e2:	486d      	ldr	r0, [pc, #436]	; (1a000a98 <UART2_IRQHandler+0x230>)
+1a0008e4:	f7ff ff64 	bl	1a0007b0 <UARTDisponible>
+1a0008e8:	2800      	cmp	r0, #0
+1a0008ea:	d0fa      	beq.n	1a0008e2 <UART2_IRQHandler+0x7a>
         USB_UART->THR = 'E';
-1a0008fa:	2245      	movs	r2, #69	; 0x45
-1a0008fc:	4b66      	ldr	r3, [pc, #408]	; (1a000a98 <UART2_IRQHandler+0x230>)
-1a0008fe:	601a      	str	r2, [r3, #0]
+1a0008ec:	2245      	movs	r2, #69	; 0x45
+1a0008ee:	4b6a      	ldr	r3, [pc, #424]	; (1a000a98 <UART2_IRQHandler+0x230>)
+1a0008f0:	601a      	str	r2, [r3, #0]
         while(!UARTDisponible(USB_UART));
-1a000900:	4865      	ldr	r0, [pc, #404]	; (1a000a98 <UART2_IRQHandler+0x230>)
-1a000902:	f7ff ff55 	bl	1a0007b0 <UARTDisponible>
-1a000906:	2800      	cmp	r0, #0
-1a000908:	d0fa      	beq.n	1a000900 <UART2_IRQHandler+0x98>
+1a0008f2:	4869      	ldr	r0, [pc, #420]	; (1a000a98 <UART2_IRQHandler+0x230>)
+1a0008f4:	f7ff ff5c 	bl	1a0007b0 <UARTDisponible>
+1a0008f8:	2800      	cmp	r0, #0
+1a0008fa:	d0fa      	beq.n	1a0008f2 <UART2_IRQHandler+0x8a>
         USB_UART->THR = 'S';
-1a00090a:	4b63      	ldr	r3, [pc, #396]	; (1a000a98 <UART2_IRQHandler+0x230>)
-1a00090c:	2253      	movs	r2, #83	; 0x53
-1a00090e:	601a      	str	r2, [r3, #0]
+1a0008fc:	2253      	movs	r2, #83	; 0x53
+1a0008fe:	4b66      	ldr	r3, [pc, #408]	; (1a000a98 <UART2_IRQHandler+0x230>)
+1a000900:	601a      	str	r2, [r3, #0]
+        while(!UARTDisponible(USB_UART));
+1a000902:	4865      	ldr	r0, [pc, #404]	; (1a000a98 <UART2_IRQHandler+0x230>)
+1a000904:	f7ff ff54 	bl	1a0007b0 <UARTDisponible>
+1a000908:	2800      	cmp	r0, #0
+1a00090a:	d0fa      	beq.n	1a000902 <UART2_IRQHandler+0x9a>
+        USB_UART->THR = '\0';
+1a00090c:	4b62      	ldr	r3, [pc, #392]	; (1a000a98 <UART2_IRQHandler+0x230>)
+1a00090e:	2100      	movs	r1, #0
+1a000910:	6019      	str	r1, [r3, #0]
         USB_UART->TER2 = 0;
-1a000910:	2100      	movs	r1, #0
 1a000912:	65d9      	str	r1, [r3, #92]	; 0x5c
         memset(buffer_prueba, 0, 100);
 1a000914:	2264      	movs	r2, #100	; 0x64
